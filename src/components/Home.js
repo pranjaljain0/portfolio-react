@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import {Container,Row,Col} from 'react-bootstrap'
 import Navigation from './Navigation'
-import ProjectCard from './ProjectCard'
 import Left from './Left'
 import HomeCard from "./HomeCard"
 
@@ -69,7 +68,7 @@ export default function Home() {
                             {
                                 HomeCards.map((HomeCards,index)=>{
                                     return(
-                                        <HomeCard HomeCards={HomeCards}/>
+                                        <HomeCard HomeCards={HomeCards} key={index}/>
                                     )
                                 })
                             }
