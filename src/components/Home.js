@@ -60,8 +60,11 @@ export default function Home() {
                     <Col lg className="cols">
                         <Row className="RightSec">
                             <Row className="RightUpperSec">
-                                <Col>
-                                <p>a</p>
+                                <Col className="RightUpperSecContent">
+                                    <h2>About Me</h2>
+                                    <p>
+                                    I discovered my passion for computer science when I was a sophomore in High School; it was then, when I started learning more for my passion. I am pursuing my bachelor's degree at Avantika University, major in Computer science and engineering. A year later I was introduced to Embedded systems, where I discovered the love for electrics and electronics and also for embedded systems. Then I got a scholarship opportunity to do a research work on Smart grid and started the never-ending journey of becoming a developer along with sharpening my eye for innovations.
+                                    </p>
                                 </Col>
                             </Row>
                             <Row className="RightLowerSec">

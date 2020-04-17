@@ -133,7 +133,17 @@ html, body, #app, #app>div {
 }
 
 .leftText{
-  padding: 10em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px 40px;
+  font-size: 140%;
+}
+
+.flex-fix{
+  display: block;
+  flex-direction: row;
 }
 
 a.projectLink{
@@ -149,6 +159,24 @@ a.projectLink{
   font-size: 120%;
   color: #fff;
   margin: 20px 0px;
+}
+
+.RightUpperSecContent{
+  padding: 50px;
+}
+
+.RightUpperSecContent h2{
+    background: -webkit-linear-gradient(45deg,hsl(243, 100%, 59%),#00ff95 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 300%;
+    display: inline;
+}
+
+.RightUpperSecContent p{
+  padding: 0px 100px 0px 0px;
 }
 
 .projectValue{
@@ -167,7 +195,7 @@ a.projectLink{
   }
 
   .leftText{
-    padding: 4em;
+    /* padding: 4em; */
   }
 
 }
@@ -180,7 +208,7 @@ a.projectLink{
   }
 
   .leftText{
-    padding: 4em;
+ 
   }
 
 }
