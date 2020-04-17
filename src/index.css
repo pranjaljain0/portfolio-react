@@ -55,6 +55,26 @@ html, body, #app, #app>div {
   padding: 0 !important;
 }
 
+.RightUpperSec{
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.RightLowerSec{
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .ColStyle{
   background-color: #1d1d1d;
   color: #fff;
@@ -131,10 +151,6 @@ a.projectLink{
   margin: 20px 0px;
 }
 
-.projectTitle:hover{
-  text-decoration: none;
-}
-
 .projectValue{
   font-size: 180%;
   font-weight: bold;
@@ -143,9 +159,26 @@ a.projectLink{
   font-family: AvenirBold;
 }
 
+@media only screen and (max-width: 1190px) {
+  /* For tab: */
+  
+  .LeftSec{
+    height: 100vh;
+  }
+
+  .leftText{
+    padding: 4em;
+  }
+
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   
+  .LeftSec{
+    height: 100vh;
+  }
+
   .leftText{
     padding: 4em;
   }

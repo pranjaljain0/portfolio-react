@@ -11,7 +11,7 @@ function Left() {
                 params={{
                     "particles": {
                         "number": {
-                            "value": 70
+                            "value": 50
                         },
                         "size": {
                             "value": 2

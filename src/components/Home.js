@@ -57,14 +57,14 @@ export default function Home() {
             <Container className="innerContainer" fluid> 
                 <Row className="mainRow">
                     <Left/>
-                    <Col md className="cols">
+                    <Col lg className="cols">
                         <Row className="RightSec">
-                            <Row>
+                            <Row className="RightUpperSec">
                                 <Col>
                                 <p>a</p>
                                 </Col>
                             </Row>
-                            <Row>
+                            <Row className="RightLowerSec">
                             {
                                 HomeCards.map((HomeCards,index)=>{
                                     return(
