@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: Avenir;
+  src: url(./assets/fonts/Avenir.otf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: AvenirBold;
+  src: url(./assets/fonts/AvenirBold.otf);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  box-sizing: border-box;
+  font-family: "Avenir";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html, body, #app, #app>div {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.nvabar-custon{
+  background: linear-gradient(120deg,#00e4d0,#5983e8);
+}
+
+.mainRow{
+  height: 100%;
+}
+
+.innerContainer{
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  padding-top: 55px;
+}
+
+.LeftSec{
+  background-color: #1d1d1d;
+  color: #fff;
+  z-index: 999;
+}
+
+.cols{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.RightSec{
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-.App-link {
-  color: #61dafb;
+.ColStyle{
+  background-color: #1d1d1d;
+  color: #fff;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+	flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.innerColImg{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  transition: all 0.2s;
+  padding: 20px;
+}
+
+
+.innerColImg:hover{
+  transform: scale(1.1);
+}
+
+.innerCol{
+  text-align: center;
+  flex: 1;
+  overflow: hidden;
+  min-height: 200px;
+}
+
+.innerImage{
+  align-self: center;
+  width: 100%;
+}
+
+.particlejs{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.preTitle{
+  font-size: 180%;
+}
+
+.name_big{
+    background: -webkit-linear-gradient(45deg,hsl(243, 100%, 59%),#00ff95 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 60px;
+    display: inline;
+}
+
+.leftText{
+  padding: 10em;
+}
+
+a.projectLink{
+  text-decoration: none !important;
+}
+
+.animated_text{
+  font-size: 140%;
+  font-weight: bold;
+}
+
+.projectTitle{
+  font-size: 120%;
+  color: #fff;
+  margin: 20px 0px;
+}
+
+.projectTitle:hover{
+  text-decoration: none;
+}
+
+.projectValue{
+  font-size: 180%;
+  font-weight: bold;
+  color: #fff;
+  margin: auto 0;
+  font-family: AvenirBold;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  
+  .leftText{
+    padding: 4em;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
 }
