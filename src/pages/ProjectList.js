@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Navigation from '../components/Navigation'
 
 function ProjectList() {
 
@@ -51,7 +52,8 @@ function ProjectList() {
 
     return (
         <div>
-            
+            <Navigation/>
+            <h1>Project list</h1>
         </div>
     )
 }

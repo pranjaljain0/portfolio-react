@@ -76,7 +76,8 @@ html, body, #app, #app>div {
 }
 
 .ColStyle{
-  background-color: #1d1d1d;
+  /* background-color: #1d1d1d; */
+  background: linear-gradient(0deg,#434343,#000);
   color: #fff;
   margin: 0 !important;
   padding: 0 !important;
@@ -95,7 +96,7 @@ html, body, #app, #app>div {
 
 
 .innerColImg:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .innerCol{
@@ -128,7 +129,7 @@ html, body, #app, #app>div {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
-    font-size: 200%;
+    font-size: 250%;
     display: inline;
 }
 
@@ -148,6 +149,7 @@ html, body, #app, #app>div {
 
 a.projectLink{
   text-decoration: none !important;
+  cursor: pointer;
 }
 
 .animated_text{
@@ -162,7 +164,7 @@ a.projectLink{
 }
 
 .RightUpperSecContent{
-  padding: 50px;
+  margin: auto;
 }
 
 .RightUpperSecContent h2{
@@ -176,7 +178,8 @@ a.projectLink{
 }
 
 .RightUpperSecContent p{
-  padding: 0px 100px 0px 0px;
+  /* padding: 0px 100px 0px 0px; */
+  margin: 0px 0px;
 }
 
 .projectValue{
@@ -185,6 +188,26 @@ a.projectLink{
   color: #fff;
   margin: auto 0;
   font-family: AvenirBold;
+}
+
+.iconHolder{
+  display: flex;
+}
+
+.iconHolder svg{
+  flex: 1;
+}
+
+.modal-content{
+  border-radius: 11px !important;
+}
+
+.project_list_item{
+  width: 100%;
+  padding: 20px;
+  border-radius: 11px;
+  background-color: #00e4d0;
+  margin: 10px 0px;
 }
 
 @media only screen and (max-width: 1190px) {
