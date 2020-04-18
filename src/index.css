@@ -35,6 +35,7 @@ html, body, #app, #app>div {
 
 .LeftSec{
   background-color: #1d1d1d;
+  background: linear-gradient(0deg,#1d1d1d,rgb(19, 19, 19));
   color: #fff;
   z-index: 999;
 }
@@ -103,7 +104,7 @@ html, body, #app, #app>div {
   text-align: center;
   flex: 1;
   overflow: hidden;
-  min-height: 200px;
+  height: 200px;
 }
 
 .innerImage{
@@ -202,12 +203,31 @@ a.projectLink{
   border-radius: 11px !important;
 }
 
+.project_list_item_link{
+  text-decoration: none;
+  color: #fff;
+}
+
+.project_list_item_link:focus,.project_list_item_link:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
 .project_list_item{
   width: 100%;
   padding: 20px;
   border-radius: 11px;
   background-color: #00e4d0;
   margin: 10px 0px;
+}
+
+.project_list_item a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.project_list_item .badge{
+  margin: 10px 0;
 }
 
 @media only screen and (max-width: 1190px) {

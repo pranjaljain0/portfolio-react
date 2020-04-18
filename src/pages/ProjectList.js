@@ -1,59 +1,26 @@
 import React, { useState } from 'react'
-import Navigation from '../components/Navigation'
+import { Badge } from 'react-bootstrap'
 
-function ProjectList() {
-
-    const [Projects, setProjects] = useState([
-        {
-            title:"Integrated Autonomous guided wheelchair",
-            projectRoute:"/project/1",
-            badgeTitle:"Integerated project",
-            initialColor:"#56CCF2",
-            finalColor:"#2F80ED",
-        },
-        {
-            title:"Multi terrain vehicle",
-            projectRoute:"#",
-            badgeTitle:"Integerated project",
-            initialColor:"#373B44",
-            finalColor:"#4286f4",
-        },
-        {
-            title:"KOSK",
-            projectRoute:"#",
-            badgeTitle:"Mobile",
-            initialColor:"#f12711",
-            finalColor:"#f5af19",
-        },
-        {
-            title:"KOSK",
-            projectRoute:"#",
-            badgeTitle:"Web",
-            initialColor:"#007991",
-            finalColor:"#78ffd6",
-        },
-        {
-            title:"Edudroid",
-            projectRoute:"#",
-            badgeTitle:"Desktop",
-            initialColor:"#11998e",
-            finalColor:"#38ef7d",
-        },
-        {
-            title:"Smart Grid",
-            projectRoute:"#",
-            badgeTitle:"Internet of things",
-            initialColor:"#e1eec3",
-            finalColor:"#f05053",
-        },
-        
-    ])
-
+function ProjectList({ProjectListVal}) {
 
     return (
         <div>
-            <Navigation/>
-            <h1>Project list</h1>
+            {
+                ProjectListVal.map((Obj,index)=>{
+                    return(
+                        <a href="#" className="project_list_item_link">
+                            <div 
+                                style={{
+                                    background: `linear-gradient(120deg,`+Obj.initialColor+`,`+Obj.finalColor+`)`
+                                }}
+                                className="project_list_item">
+                                    <Badge pill variant="primary">{Obj.badgeTitle}</Badge>
+                                <p>{Obj.title}</p>
+                            </div>
+                        </a>
+                    )
+                })
+            }
         </div>
     )
 }

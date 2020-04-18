@@ -1,5 +1,44 @@
 import React from 'react'
 import {Modal} from 'react-bootstrap'
+import ProjectList from '../pages/ProjectList'
+import CodeList from './CodeList'
+import Hobby from './Hobby'
+import Education from './Education'
+import SocialModal from './SocialModal'
+import WorkExp from './WorkExp'
+
+function setModal(value,valObj){
+    if(value==="Projects"){
+        return(
+            <ProjectList ProjectListVal={valObj} />
+        )
+    }
+    else if(value==="Coding"){
+        return(
+            <CodeList CodeListVal={valObj}/>
+        )
+    }
+    else if(value==="Hobbies & Interest"){
+        return(
+            <Hobby HobbyListVal={valObj}/>
+        )
+    }
+    else if(value==="Education"){
+        return(
+            <Education EducationObj={valObj}/>
+        )
+    }
+    else if(value==="Social"){
+        return(
+            <SocialModal SocialModalObj={valObj}/>
+        )
+    }
+    else if(value==="Work Experience"){
+        return(
+            <WorkExp WorkExpObj={valObj}/>
+        )
+    }
+}
 
 function HomeModal({lgShow,setLgShow,HomeCards}) {
     return (
@@ -7,8 +46,7 @@ function HomeModal({lgShow,setLgShow,HomeCards}) {
         size="lg"
         show={lgShow}
         onHide={() => setLgShow(false)}
-        aria-labelledby="example-modal-sizes-title-lg"
-      >
+        aria-labelledby="example-modal-sizes-title-lg">
         <Modal.Header closeButton>
           <Modal.Title id="example-modal-sizes-title-lg">
             {HomeCards.title}
@@ -16,17 +54,7 @@ function HomeModal({lgShow,setLgShow,HomeCards}) {
         </Modal.Header>
         <Modal.Body>
             {
-                HomeCards.value.map((Obj,index)=>{
-                    return(
-                        <div 
-                            style={{
-                                background: `linear-gradient(120deg,`+HomeCards.initialColor+`,`+HomeCards.finalColor+`)`
-                            }}
-                            className="project_list_item">
-                            <p>{Obj.title}</p>
-                        </div>
-                    )
-                })
+                setModal(HomeCards.title,HomeCards.value)
             }
         </Modal.Body>
       </Modal>
