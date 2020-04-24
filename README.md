@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/pranjaljain0/Portfolio-React/badge.svg?branch=master)](https://coveralls.io/github/pranjaljain0/Portfolio-React?branch=master)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

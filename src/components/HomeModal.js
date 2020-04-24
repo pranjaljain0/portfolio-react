@@ -49,13 +49,15 @@ function HomeModal({lgShow,setLgShow,HomeCards}) {
         aria-labelledby="example-modal-sizes-title-lg">
         <Modal.Header closeButton>
           <Modal.Title id="example-modal-sizes-title-lg">
-            {HomeCards.title}
+                
+                {HomeCards.title}
+                
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
             {
                 setModal(HomeCards.title,HomeCards.value)
-            }
+            } 
         </Modal.Body>
       </Modal>
     )
