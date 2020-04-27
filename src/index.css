@@ -230,6 +230,10 @@ a.projectLink{
   margin: 10px 0;
 }
 
+.VerticalTimeline::before{
+  background-image: linear-gradient(0deg, red, yellow) !important;
+}
+
 @media only screen and (max-width: 1190px) {
   /* For tab: */
   

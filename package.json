@@ -10,13 +10,14 @@
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.1",
-    "react-icons": "^3.9.0",
+    "react-icons": "^3.10.0",
     "react-particles-js": "^3.0.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "react-typed": "^1.2.0",
     "react-typing-animation": "^1.6.2",
     "react-typist": "^2.0.5",
+    "react-vertical-timeline-component": "^2.6.0",
     "styled-components": "^5.1.0"
   },
   "scripts": {

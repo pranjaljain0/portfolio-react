@@ -62,16 +62,44 @@ export default function Home() {
             title:"Coding",
             value:[
                         {
-                            title:"C",
+                            title:"Python",
+                            level:"Advance",
+                        },
+                        {
+                            title:"HTML",
+                            level:"Advance",
+                        },
+                        {
+                            title:"PHP",
+                            level:"Advance",
+                        },
+                        {
+                            title:"JAVA",
+                            level:"Advance"
+                        },
+                        {
+                            title:"C++",
+                            level:"Advance"
                         },
                         {
                             title:"C",
+                            level:"Advance"
                         },
                         {
-                            title:"C",
+                            title:"Android",
+                            level:"Intermediate"
                         },
                         {
-                            title:"C",
+                            title:"JS",
+                            level:"Intermediate"
+                        },
+                        {
+                            title:"MongoDB",
+                            level:"Intermediate"
+                        },
+                        {
+                            title:"ReactJS",
+                            level:"Beginner"
                         },
                     ],
             route:"/languages",
@@ -83,16 +111,22 @@ export default function Home() {
             title:"Hobbies & Interest",
             value:[
                 {
-                    title:"C",
+                    title:"Solving puzzles",
                 },
                 {
-                    title:"C",
+                    title:"Computing",
                 },
                 {
-                    title:"C",
+                    title:"Going to the gym",
                 },
                 {
-                    title:"C",
+                    title:"Travelling",
+                },
+                {
+                    title:"Networking",
+                },
+                {
+                    title:"Playing guitar",
                 },
             ],
             route:"#",
@@ -104,16 +138,48 @@ export default function Home() {
             title:"Education",
             value:[
                 {
-                    title:"C",
+                    title:"Avantika University",
+                    duration:"2017-2021",
+                    location_city:"Ujjain",
+                    location_state:"Madhya Pradesh",
+                    location_country:"IN",
+                    description:"Bachelor of Technology",
+                    sec_details:"Specialization : Computer Science engineering",
+                    color:"#fef54b",
+                    text:"#1d1d1d",
                 },
                 {
-                    title:"C",
+                    title:"The Sanskaar Valley School",
+                    duration:"2012 - 2016",
+                    location_city:"Bhopal",
+                    location_state:"Madhya Pradesh",
+                    location_country:"IN",
+                    description:"High school",
+                    sec_details:"ISC- 66%; ICSE- 87%",
+                    color:"#ffe54a",
+                    text:"#1d1d1d",
                 },
                 {
-                    title:"C",
+                    title:"The Scindia School",
+                    duration:"2008 - 2011",
+                    location_city:"Gwalior",
+                    location_state:"Madhya Pradesh",
+                    location_country:"IN",
+                    description:"High school",
+                    sec_details:"",
+                    color:"#ffd448",
+                    text:"#1d1d1d",
                 },
                 {
-                    title:"C",
+                    title:"St. Joseph's Co-ed School ",
+                    duration:"2003 - 2007",
+                    location_city:"Bhopal",
+                    location_state:"Madhya Pradesh",
+                    location_country:"IN",
+                    description:"Middle school",
+                    sec_details:"",
+                    color:"#ffc446",
+                    text:"#1d1d1d",
                 },
             ],
             route:"#",
