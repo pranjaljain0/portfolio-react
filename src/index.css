@@ -234,6 +234,10 @@ a.projectLink{
   background-image: linear-gradient(0deg, red, yellow) !important;
 }
 
+.ButtonGroup{
+  margin: 20px 0;
+}
+
 @media only screen and (max-width: 1190px) {
   /* For tab: */
   

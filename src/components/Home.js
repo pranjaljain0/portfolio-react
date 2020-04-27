@@ -188,19 +188,23 @@ export default function Home() {
             icon:'GiBookshelf',
         },
         {
-            title:"Social",
+            title:"Contact",
             value:[
                 {
-                    title:"C",
+                    title:"instagram",
+                    link:""
                 },
                 {
-                    title:"C",
+                    title:"linkedin",
+                    link:""
                 },
                 {
-                    title:"C",
+                    title:"github",
+                    link:""
                 },
                 {
-                    title:"C",
+                    title:"instagram",
+                    link:""
                 },
             ],
             route:"#",

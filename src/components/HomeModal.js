@@ -28,7 +28,7 @@ function setModal(value,valObj){
             <Education EducationObj={valObj}/>
         )
     }
-    else if(value==="Social"){
+    else if(value==="Contact"){
         return(
             <SocialModal SocialModalObj={valObj}/>
         )
