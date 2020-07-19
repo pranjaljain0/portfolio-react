@@ -1,11 +1,9 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Index from './navigation';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Index from "./navigation";
 
 function App() {
-  return (
-    <Index/>
-  );
+  return <Index />;
 }
 
 export default App;

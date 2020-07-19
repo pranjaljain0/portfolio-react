@@ -13,39 +13,42 @@
   font-family: "Avenir";
 }
 
-html, body, #app, #app>div {
+html,
+body,
+#app,
+#app > div {
   height: 100%;
   overflow-x: hidden;
 }
 
-.nvabar-custon{
-  background: linear-gradient(120deg,#00e4d0,#5983e8);
+.nvabar-custon {
+  background: linear-gradient(120deg, #00e4d0, #5983e8);
 }
 
-.mainRow{
+.mainRow {
   height: 100%;
 }
 
-.innerContainer{
+.innerContainer {
   position: absolute;
   bottom: 0;
   height: 100%;
   padding-top: 55px;
 }
 
-.LeftSec{
+.LeftSec {
   background-color: #1d1d1d;
-  background: linear-gradient(0deg,#1d1d1d,rgb(19, 19, 19));
+  background: linear-gradient(0deg, #1d1d1d, rgb(19, 19, 19));
   color: #fff;
   z-index: 999;
 }
 
-.cols{
+.cols {
   margin: 0 !important;
   padding: 0 !important;
 }
 
-.RightSec{
+.RightSec {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -56,7 +59,7 @@ html, body, #app, #app>div {
   padding: 0 !important;
 }
 
-.RightUpperSec{
+.RightUpperSec {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -66,7 +69,7 @@ html, body, #app, #app>div {
   padding: 0 !important;
 }
 
-.RightLowerSec{
+.RightLowerSec {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -76,17 +79,17 @@ html, body, #app, #app>div {
   padding: 0 !important;
 }
 
-.ColStyle{
+.ColStyle {
   /* background-color: #1d1d1d; */
-  background: linear-gradient(0deg,#434343,#000);
+  background: linear-gradient(0deg, #434343, #000);
   color: #fff;
   margin: 0 !important;
   padding: 0 !important;
   display: flex;
-	flex-direction: column;
+  flex-direction: column;
 }
 
-.innerColImg{
+.innerColImg {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,24 +98,23 @@ html, body, #app, #app>div {
   padding: 20px;
 }
 
-
-.innerColImg:hover{
+.innerColImg:hover {
   transform: scale(1.2);
 }
 
-.innerCol{
+.innerCol {
   text-align: center;
   flex: 1;
   overflow: hidden;
   height: 200px;
 }
 
-.innerImage{
+.innerImage {
   align-self: center;
   width: 100%;
 }
 
-.particlejs{
+.particlejs {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -120,21 +122,21 @@ html, body, #app, #app>div {
   right: 0;
 }
 
-.preTitle{
+.preTitle {
   font-size: 180%;
 }
 
-.name_big{
-    background: -webkit-linear-gradient(45deg,hsl(243, 100%, 59%),#00ff95 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
-    font-size: 250%;
-    display: inline;
+.name_big {
+  background: -webkit-linear-gradient(45deg, hsl(243, 100%, 59%), #00ff95 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 250%;
+  display: inline;
 }
 
-.leftText{
+.leftText {
   height: 100%;
   display: flex;
   align-items: center;
@@ -143,47 +145,47 @@ html, body, #app, #app>div {
   font-size: 140%;
 }
 
-.flex-fix{
+.flex-fix {
   display: block;
   flex-direction: row;
 }
 
-a.projectLink{
+a.projectLink {
   text-decoration: none !important;
   cursor: pointer;
 }
 
-.animated_text{
+.animated_text {
   font-size: 140%;
   font-weight: bold;
 }
 
-.projectTitle{
+.projectTitle {
   font-size: 120%;
   color: #fff;
   margin: 20px 0px;
 }
 
-.RightUpperSecContent{
+.RightUpperSecContent {
   margin: auto;
 }
 
-.RightUpperSecContent h2{
-    background: -webkit-linear-gradient(45deg,hsl(243, 100%, 59%),#00ff95 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
-    font-size: 300%;
-    display: inline;
+.RightUpperSecContent h2 {
+  background: -webkit-linear-gradient(45deg, hsl(243, 100%, 59%), #00ff95 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 300%;
+  display: inline;
 }
 
-.RightUpperSecContent p{
+.RightUpperSecContent p {
   /* padding: 0px 100px 0px 0px; */
   margin: 0px 0px;
 }
 
-.projectValue{
+.projectValue {
   font-size: 180%;
   font-weight: bold;
   color: #fff;
@@ -191,29 +193,30 @@ a.projectLink{
   font-family: AvenirBold;
 }
 
-.iconHolder{
+.iconHolder {
   display: flex;
 }
 
-.iconHolder svg{
+.iconHolder svg {
   flex: 1;
 }
 
-.modal-content{
+.modal-content {
   border-radius: 11px !important;
 }
 
-.project_list_item_link{
+.project_list_item_link {
   text-decoration: none;
   color: #fff;
 }
 
-.project_list_item_link:focus,.project_list_item_link:hover{
+.project_list_item_link:focus,
+.project_list_item_link:hover {
   text-decoration: none;
   color: #fff;
 }
 
-.project_list_item{
+.project_list_item {
   width: 100%;
   padding: 20px;
   border-radius: 11px;
@@ -221,45 +224,42 @@ a.projectLink{
   margin: 10px 0px;
 }
 
-.project_list_item a{
+.project_list_item a {
   text-decoration: none;
   color: #fff;
 }
 
-.project_list_item .badge{
+.project_list_item .badge {
   margin: 10px 0;
 }
 
-.VerticalTimeline::before{
+.VerticalTimeline::before {
   background-image: linear-gradient(0deg, red, yellow) !important;
 }
 
-.ButtonGroup{
+.ButtonGroup {
   margin: 20px 0;
 }
 
 @media only screen and (max-width: 1190px) {
   /* For tab: */
-  
-  .LeftSec{
+
+  .LeftSec {
     height: 100vh;
   }
 
-  .leftText{
+  .leftText {
     /* padding: 4em; */
   }
-
 }
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  
-  .LeftSec{
+
+  .LeftSec {
     height: 100vh;
   }
 
-  .leftText{
- 
+  .leftText {
   }
-
 }
