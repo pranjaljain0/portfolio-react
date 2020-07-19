@@ -12,36 +12,8 @@ export default function Index() {
           <Home />
         </Route>
         <Route path="/projects" component={ProjectList}></Route>
-        <Route path="/languages" component={languages}></Route>
         <Route path="/project/:project_id" component={Project}></Route>
-        <Route path="/dashboard">
-          <Dashboard />
-        </Route>
       </Switch>
     </Router>
-  );
-}
-
-function Dashboard() {
-  return (
-    <div>
-      <h2>Dashboard</h2>
-    </div>
-  );
-}
-
-function Projects() {
-  return (
-    <div>
-      <h2>Projects</h2>
-    </div>
-  );
-}
-
-function languages() {
-  return (
-    <div>
-      <h2>prog languages</h2>
-    </div>
   );
 }
