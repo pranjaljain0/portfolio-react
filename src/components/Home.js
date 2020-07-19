@@ -215,16 +215,17 @@ export default function Home() {
       title: "Work Experience",
       value: [
         {
-          title: "C",
+          title: "HUDE Labs",
+          description: "Website Development",
+          duration: "3 Months",
+          location: "Bhopal, Madhya Pradesh 462024, IN",
         },
         {
-          title: "C",
-        },
-        {
-          title: "C",
-        },
-        {
-          title: "C",
+          title: "Emote Electric",
+          description:
+            "Website Development, Android and iOS App Development, Hosting Solutions, SEO and Hardware Interfacing",
+          duration: "3 Months",
+          location: "Coimbatore, Tamil Nadu 641032, IN",
         },
       ],
       route: "#",

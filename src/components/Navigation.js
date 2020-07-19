@@ -14,10 +14,10 @@ export class Navigation extends Component {
             <Nav.Link href={resume}>
               <Button variant="light">Curriculum Vitae (CV)</Button>
             </Nav.Link>
-            <Nav.Link href="#link">
+            <Nav.Link href="https://github.com/pranjaljain0">
               <FaGithub color="rgba(255,255,255,0.8)" size="1.5em" />
             </Nav.Link>
-            <Nav.Link href="#link">
+            <Nav.Link href="https://www.linkedin.com/in/pranjal-jain-736552139/">
               <FaLinkedin color="rgba(255,255,255,0.8)" size="1.5em" />
             </Nav.Link>
           </Nav>
