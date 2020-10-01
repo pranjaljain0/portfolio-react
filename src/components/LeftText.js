@@ -1,12 +1,12 @@
 import React from "react";
 import Typed from "react-typed";
-function LeftText() {
+function LeftText({ name }) {
   return (
     <div className="leftText">
       <div className="flex-fix">
         <h2>Hi, </h2>
         <span className="preTitle">I am </span>
-        <h1 className="name_big">Pranjal Jain</h1>
+        <h1 className="name_big">{name}</h1>
         <p className="animated_text">
           <Typed
             strings={[

@@ -3,7 +3,7 @@ import { Col } from "react-bootstrap";
 import Particles from "react-particles-js";
 import LeftText from "./LeftText";
 
-function Left() {
+function Left({ name }) {
   return (
     <Col md className="LeftSec">
       <Particles
@@ -27,7 +27,7 @@ function Left() {
           },
         }}
       />
-      <LeftText />
+      <LeftText name={name} />
     </Col>
   );
 }

@@ -4,12 +4,12 @@ import Home from "../components/Home";
 import Project from "../pages/Project";
 import ProjectList from "../pages/ProjectList";
 
-export default function Index() {
+export default function Index({ name }) {
   return (
     <Router>
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Home name={name} />
         </Route>
         <Route path="/projects" component={ProjectList}></Route>
         <Route path="/project/:project_id" component={Project}></Route>

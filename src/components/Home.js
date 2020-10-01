@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 import Left from "./Left";
 import HomeCard from "./HomeCard";
 
-export default function Home() {
+export default function Home({ name }) {
   // const [HomeCards, setHomeCards] = useState(
   let HomeCards = [
     {
@@ -240,7 +240,7 @@ export default function Home() {
       <Navigation />
       <Container className="innerContainer" fluid>
         <Row className="mainRow">
-          <Left />
+          <Left name={name} />
           <Col lg className="cols">
             <Row className="RightSec">
               <Row className="RightUpperSec">
