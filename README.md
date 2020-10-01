@@ -28,8 +28,6 @@ So, yes! You can win a T-Shirt and few awesome stickers to attach on your laptop
 
 # Note:
 
-# **_Pages must be animated. Simple pages will not be accepted._**
-
 ## Pages:
 
 ### 1. Home Page
@@ -38,12 +36,15 @@ So, yes! You can win a T-Shirt and few awesome stickers to attach on your laptop
 
 ### 3. About-Us
 
-## Follow the file format as provided. If you want to add more files, you can, but put those in respectuve folders.
+### 4. Projects
+
+## Follow the file format as provided. If you want to add more files, you can, but put those in respective folders.
 
 ## File structure is provided. Some references are also given for completing the page.
 
 ## Note:
 
 ### Use Lorem Ipsum generator where you need to add text.
+[Lipsum generator](https://www.lipsum.com/)
 
 # Best of Luck
