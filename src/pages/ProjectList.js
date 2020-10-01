@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Badge } from "react-bootstrap";
 
 function ProjectList({ ProjectListVal }) {
@@ -6,7 +6,7 @@ function ProjectList({ ProjectListVal }) {
     <div>
       {ProjectListVal.map((Obj, index) => {
         return (
-          <a href="#" className="project_list_item_link">
+          <span className="project_list_item_link">
             <div
               style={{
                 background:
@@ -23,7 +23,7 @@ function ProjectList({ ProjectListVal }) {
               </Badge>
               <p>{Obj.title}</p>
             </div>
-          </a>
+          </span>
         );
       })}
     </div>

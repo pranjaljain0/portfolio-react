@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Col, Badge } from "react-bootstrap";
+import { Col, } from "react-bootstrap";
 import { GiBookshelf, GiThorHammer } from "react-icons/gi";
 import { FaGuitar } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
@@ -29,7 +29,7 @@ function HomeCard({ HomeCards }) {
       <Col className="ColStyle" xs={6} md={4}>
         <div className="innerCol">
           {/* <a href={HomeCards.route} className="projectLink"> */}
-          <a onClick={() => setLgShow(true)} className="projectLink">
+          <span onClick={() => setLgShow(true)} className="projectLink">
             <div
               style={{
                 background:
@@ -46,7 +46,7 @@ function HomeCard({ HomeCards }) {
                 {seticon(HomeCards.icon, "50px")}
               </div>
             </div>
-          </a>
+          </span>
         </div>
       </Col>
       <HomeModal lgShow={lgShow} setLgShow={setLgShow} HomeCards={HomeCards} />

@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Navigation from "./Navigation";
 import Left from "./Left";
 import HomeCard from "./HomeCard";
 
 export default function Home() {
-  const [HomeCards, setHomeCards] = useState([
+  // const [HomeCards, setHomeCards] = useState(
+  let HomeCards = [
     {
       title: "Projects",
       value: [
@@ -233,7 +234,7 @@ export default function Home() {
       finalColor: "#f05053",
       icon: "GoRepo",
     },
-  ]);
+  ];
   return (
     <div>
       <Navigation />
