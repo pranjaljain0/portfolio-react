@@ -8,6 +8,7 @@ export default function Home() {
   const [HomeCards, setHomeCards] = useState([
     {
       title: "Projects",
+      description: "Lorem Ipsum has been the industry's standard dummy text ever.",
       value: [
         {
           title: "Integrated Autonomous guided wheelchair",
@@ -15,6 +16,7 @@ export default function Home() {
           badgeTitle: "Integerated project",
           initialColor: "#56CCF2",
           finalColor: "#2F80ED",
+          language: 'C++',
         },
         {
           title: "Multi terrain vehicle",
@@ -22,6 +24,7 @@ export default function Home() {
           badgeTitle: "Integerated project",
           initialColor: "#373B44",
           finalColor: "#4286f4",
+          language: 'Java',
         },
         {
           title: "KOSK",
@@ -29,6 +32,7 @@ export default function Home() {
           badgeTitle: "Mobile",
           initialColor: "#f12711",
           finalColor: "#f5af19",
+          language: 'JavaScript',
         },
         {
           title: "KOSK",
@@ -36,6 +40,7 @@ export default function Home() {
           badgeTitle: "Web",
           initialColor: "#007991",
           finalColor: "#78ffd6",
+          language: 'Python',
         },
         {
           title: "Edudroid",
@@ -43,6 +48,7 @@ export default function Home() {
           badgeTitle: "Desktop",
           initialColor: "#11998e",
           finalColor: "#38ef7d",
+          language: 'Haskell',
         },
         {
           title: "Smart Grid",
@@ -50,6 +56,7 @@ export default function Home() {
           badgeTitle: "Internet of things",
           initialColor: "#e1eec3",
           finalColor: "#f05053",
+          language: 'Ruby',
         },
       ],
       route: "/projects",

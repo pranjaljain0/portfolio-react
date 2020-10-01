@@ -21,6 +21,9 @@ function ProjectList({ ProjectListVal }) {
               <Badge pill variant="primary">
                 {Obj.badgeTitle}
               </Badge>
+              <Badge pill variant="secondary">
+                {Obj.language}
+              </Badge>
               <p>{Obj.title}</p>
             </div>
           </a>
