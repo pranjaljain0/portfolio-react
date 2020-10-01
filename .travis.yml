@@ -1,17 +1,17 @@
 
 language: node_js
-node_js: node
+node_js:
+  - "stable"
 cache:
   directories:
     - node_modules
 script:
-  - yarn test:unit
+  - npm test
+  - npm run build
 before_deploy:
   - npm install netlify-cli -g
-  - yarn build
 env:
   - CI=true
-
 deploy:
   provider: script
   script: netlify deploy -s $NETLIFY_SITE_ID -t $NETLIFY_ACCESS_TOKEN -p ./build
