@@ -14,7 +14,7 @@ env:
   - CI=true
 deploy:
   provider: script
+  edge: true
   script: netlify deploy --dir=dist --prod
-  skip_cleanup: true
   on:
     branch: master
