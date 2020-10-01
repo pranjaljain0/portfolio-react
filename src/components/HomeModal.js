@@ -34,7 +34,9 @@ function HomeModal({ lgShow, setLgShow, HomeCards }) {
       <Modal.Header closeButton>
         <Modal.Title id="example-modal-sizes-title-lg">
           {HomeCards.title}
+          <p style={{fontSize:'medium', color:'grey'}}>{HomeCards.description}</p>
         </Modal.Title>
+        
       </Modal.Header>
       <Modal.Body>{setModal(HomeCards.title, HomeCards.value)}</Modal.Body>
     </Modal>
