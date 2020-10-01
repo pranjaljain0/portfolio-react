@@ -7,9 +7,9 @@ cache:
     - node_modules
 script:
   - npm test
-  - npm run build
 before_deploy:
   - npm install netlify-cli -g
+  - yarn build
 env:
   - CI=true
 deploy:
