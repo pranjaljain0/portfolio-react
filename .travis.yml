@@ -14,7 +14,7 @@ env:
   - CI=true
 deploy:
   provider: script
-  script: netlify deploy -s $NETLIFY_SITE_ID -t $NETLIFY_ACCESS_TOKEN -p ./build
+  script: netlify deploy --dir=dist --prod
   skip_cleanup: true
   on:
     branch: master
