@@ -6,7 +6,7 @@ function LeftText({ name }) {
       <div className="flex-fix">
         <h2>Hi, </h2>
         <span className="preTitle">I am </span>
-        <h1 className="name_big">{name}</h1>
+        <h1 className="name_big" data-testid="name">{name}</h1>
         <p className="animated_text">
           <Typed
             strings={[
