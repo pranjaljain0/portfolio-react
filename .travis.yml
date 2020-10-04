@@ -16,6 +16,5 @@ deploy:
   site: pranjaljain.tech
   auth: $NETLIFY_ACCESS_TOKEN
   edge: true # opt in to dpl v2
-  prod: false
   on:
     branch: master
