@@ -1,5 +1,6 @@
 import React from "react";
 import Typed from "react-typed";
+
 function LeftText() {
   return (
     <div className="leftText">

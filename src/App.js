@@ -1,11 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Index from "./navigation";
+import Routes from "./navigation";
 
-function App({ name }) {
-  return <>
-    <Index name={name} />
-  </>;
+function App() {
+  return <Routes />;
 }
 
 export default App;
