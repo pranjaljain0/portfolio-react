@@ -28,7 +28,6 @@ function HomeCard({ HomeCards }) {
     <>
       <Col className="ColStyle" xs={6} md={4}>
         <div className="innerCol">
-          {/* <a href={HomeCards.route} className="projectLink"> */}
           <span onClick={() => setLgShow(true)} className="projectLink">
             <div
               style={{
