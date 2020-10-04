@@ -12,6 +12,6 @@ temp=`echo $url | sed 's/\\\\\//\//g' | sed 's/[{}]//g' | awk -v k="text" '{n=sp
 echo "Publishing build ${temp##*|}..."
 curl -X POST -H "Authorization: Bearer $NETLIFY_ACCESS_TOKEN" -d "{}" "https://api.netlify.com/api/v1/sites/pranjaljain.tech/deploys/${temp##*|}/restore"
 
-# https://open-api.netlify.com/#/default/lockDeploy
-echo "Locking deploy to ${temp##*|}..."
-curl -X POST -H "Authorization: Bearer $NETLIFY_ACCESS_TOKEN" -d "{}" "https://api.netlify.com/api/v1/deploys/${temp##*|}/lock"
+# # https://open-api.netlify.com/#/default/lockDeploy
+# echo "Locking deploy to ${temp##*|}..."
+# curl -X POST -H "Authorization: Bearer $NETLIFY_ACCESS_TOKEN" -d "{}" "https://api.netlify.com/api/v1/deploys/${temp##*|}/lock"
