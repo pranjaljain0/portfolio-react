@@ -6,9 +6,9 @@ cache:
     - node_modules
 script:
   - npm test
-  - npm run build
 before_deploy:
   - npm install netlify-cli -g
+  - yarn build
 env:
   - CI=true
 after_success:
@@ -16,7 +16,7 @@ after_success:
   - ./extra/publish.sh
 deploy:
   provider: script
-  script: netlify deploy -s $NETLIFY_SITE_ID -t $NETLIFY_ACCESS_TOKEN -p ./build
-  skip_cleanup: true
+  edge: true
+  script: netlify deploy --dir=build --prod
   on:
     branch: master

@@ -12,14 +12,24 @@ import {
 const Social = styled.div`
   display: flex;
   flex-direction: column;
-  height: 45vh;
-  padding: 10px;
+  height: 50vh;
+  padding: 5px;
 `;
 
 const SocialIcons = styled.div`
   display: flex;
   width: 100%;
 `;
+
+const CustomLink = styled.a`
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+`
 
 const Icon = styled.div`
   flex: 1;
@@ -59,11 +69,11 @@ function SocialModal({ SocialModalObj }) {
         <SocialIcons>
           <Icon label="github">
             <AiOutlineGithub size={35} />
-            <p>@pranjaljain0</p>
+            <CustomLink href="https://github.com/pranjaljain0" target="_blank">@pranjaljain0</CustomLink>
           </Icon>
           <Icon label="linkedin">
             <AiOutlineLinkedin size={35} />
-            <p>@pranjal-jain-736552139</p>
+            <CustomLink href="https://www.linkedin.com/in/pranjaljain0/" target="_blank">@pranjaljain0</CustomLink>
           </Icon>
         </SocialIcons>
 
@@ -88,6 +98,10 @@ function SocialModal({ SocialModalObj }) {
             as="textarea"
             aria-label="With textarea"
             placeholder="Write some description"
+            style={{
+              resize: "none",
+              height: 100
+            }}
           />
         </InputGroup>
 
