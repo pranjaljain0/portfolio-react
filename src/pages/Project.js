@@ -7,7 +7,7 @@ import homecards from "../data/homecards.json";
 function Project(props) {
   var project_id = props.match.params.project_id;
 
-  const projectsData = homecards.data.find((data) => data.title == "Projects");
+  const projectsData = homecards.data.find((data) => data.title === "Projects");
   const projectData = projectsData?.value ? projectsData.value.find((project) => project.id === project_id) : {}
 
   return (
