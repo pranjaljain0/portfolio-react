@@ -1,11 +1,11 @@
-{ 
-  "data":[
+{
+  "data": [
     {
       "title": "Projects",
       "description": "Lorem Ipsum has been the industry's standard dummy text ever.",
       "value": [
         {
-          "id":1,
+          "id": 1,
           "title": "Integrated Autonomous guided wheelchair",
           "projectRoute": "/project/1",
           "badgeTitle": "Integerated project",
@@ -14,7 +14,7 @@
           "language": "C++"
         },
         {
-          "id":2, 
+          "id": 2,
           "title": "Multi terrain vehicle",
           "projectRoute": "#",
           "badgeTitle": "Integerated project",
@@ -23,7 +23,7 @@
           "language": "Java"
         },
         {
-          "id":3,
+          "id": 3,
           "title": "KOSK",
           "projectRoute": "#",
           "badgeTitle": "Mobile",
@@ -32,7 +32,7 @@
           "language": "JavaScript"
         },
         {
-          "id":4,
+          "id": 4,
           "title": "KOSK",
           "projectRoute": "#",
           "badgeTitle": "Web",
@@ -41,7 +41,7 @@
           "language": "Python"
         },
         {
-          "id":5, 
+          "id": 5,
           "title": "Edudroid",
           "projectRoute": "#",
           "badgeTitle": "Desktop",
@@ -50,7 +50,7 @@
           "language": "Haskell"
         },
         {
-          "id":6,
+          "id": 6,
           "title": "Smart Grid",
           "projectRoute": "#",
           "badgeTitle": "Internet of things",
@@ -117,22 +117,28 @@
       "title": "Hobbies & Interest",
       "value": [
         {
-          "title": "Solving puzzles"
+          "title": "Solving puzzles",
+          "hobbyIcon": "FaPuzzlePiece"
         },
         {
-          "title": "Computing"
+          "title": "Computing",
+          "hobbyIcon": "MdComputer"
         },
         {
-          "title": "Going to the gym"
+          "title": "Going to the gym",
+          "hobbyIcon": "FaDumbbell"
         },
         {
-          "title": "Travelling"
+          "title": "Travelling",
+          "hobbyIcon": "MdCardTravel"
         },
         {
-          "title": "Networking"
+          "title": "Networking",
+          "hobbyIcon": "FaNetworkWired"
         },
         {
-          "title": "Playing guitar"
+          "title": "Playing guitar",
+          "hobbyIcon": "FaGuitar"
         }
       ],
       "route": "#",
@@ -143,7 +149,7 @@
     {
       "title": "Education",
       "value": [
-      {
+        {
           "title": "Avantika University",
           "duration": "2017-2021",
           "location_city": "Ujjain",
@@ -229,8 +235,7 @@
         },
         {
           "title": "Emote Electric",
-          "description":
-            "Website Development, Android and iOS App Development, Hosting Solutions, SEO and Hardware Interfacing",
+          "description": "Website Development, Android and iOS App Development, Hosting Solutions, SEO and Hardware Interfacing",
           "duration": "3 Months",
           "location": "Coimbatore, Tamil Nadu 641032, IN"
         }
