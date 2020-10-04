@@ -1,0 +1,244 @@
+{ 
+  "data":[
+    {
+      "title": "Projects",
+      "description": "Lorem Ipsum has been the industry's standard dummy text ever.",
+      "value": [
+        {
+          "id":1,
+          "title": "Integrated Autonomous guided wheelchair",
+          "projectRoute": "/project/1",
+          "badgeTitle": "Integerated project",
+          "initialColor": "#56CCF2",
+          "finalColor": "#2F80ED",
+          "language": "C++"
+        },
+        {
+          "id":2, 
+          "title": "Multi terrain vehicle",
+          "projectRoute": "#",
+          "badgeTitle": "Integerated project",
+          "initialColor": "#373B44",
+          "finalColor": "#4286f4",
+          "language": "Java"
+        },
+        {
+          "id":3,
+          "title": "KOSK",
+          "projectRoute": "#",
+          "badgeTitle": "Mobile",
+          "initialColor": "#f12711",
+          "finalColor": "#f5af19",
+          "language": "JavaScript"
+        },
+        {
+          "id":4,
+          "title": "KOSK",
+          "projectRoute": "#",
+          "badgeTitle": "Web",
+          "initialColor": "#007991",
+          "finalColor": "#78ffd6",
+          "language": "Python"
+        },
+        {
+          "id":5, 
+          "title": "Edudroid",
+          "projectRoute": "#",
+          "badgeTitle": "Desktop",
+          "initialColor": "#11998e",
+          "finalColor": "#38ef7d",
+          "language": "Haskell"
+        },
+        {
+          "id":6,
+          "title": "Smart Grid",
+          "projectRoute": "#",
+          "badgeTitle": "Internet of things",
+          "initialColor": "#e1eec3",
+          "finalColor": "#f05053",
+          "language": "Ruby"
+        }
+      ],
+      "route": "/projects",
+      "initialColor": "#56CCF2",
+      "finalColor": "#2F80ED",
+      "icon": "GiThorHammer"
+    },
+    {
+      "title": "Coding",
+      "value": [
+        {
+          "title": "Python",
+          "level": "Advance"
+        },
+        {
+          "title": "HTML",
+          "level": "Advance"
+        },
+        {
+          "title": "PHP",
+          "level": "Advance"
+        },
+        {
+          "title": "JAVA",
+          "level": "Advance"
+        },
+        {
+          "title": "C++",
+          "level": "Advance"
+        },
+        {
+          "title": "C",
+          "level": "Advance"
+        },
+        {
+          "title": "Android",
+          "level": "Intermediate"
+        },
+        {
+          "title": "JS",
+          "level": "Intermediate"
+        },
+        {
+          "title": "MongoDB",
+          "level": "Intermediate"
+        },
+        {
+          "title": "ReactJS",
+          "level": "Beginner"
+        }
+      ],
+      "route": "/languages",
+      "initialColor": "#373B44",
+      "finalColor": "#4286f4",
+      "icon": "DiJavascript1"
+    },
+    {
+      "title": "Hobbies & Interest",
+      "value": [
+        {
+          "title": "Solving puzzles"
+        },
+        {
+          "title": "Computing"
+        },
+        {
+          "title": "Going to the gym"
+        },
+        {
+          "title": "Travelling"
+        },
+        {
+          "title": "Networking"
+        },
+        {
+          "title": "Playing guitar"
+        }
+      ],
+      "route": "#",
+      "initialColor": "#f12711",
+      "finalColor": "#f5af19",
+      "icon": "FaGuitar"
+    },
+    {
+      "title": "Education",
+      "value": [
+      {
+          "title": "Avantika University",
+          "duration": "2017-2021",
+          "location_city": "Ujjain",
+          "location_state": "Madhya Pradesh",
+          "location_country": "IN",
+          "description": "Bachelor of Technology",
+          "sec_details": "Specialization : Computer Science engineering",
+          "color": "#fef54b",
+          "text": "#1d1d1d"
+        },
+        {
+          "title": "The Sanskaar Valley School",
+          "duration": "2012 - 2016",
+          "location_city": "Bhopal",
+          "location_state": "Madhya Pradesh",
+          "location_country": "IN",
+          "description": "High school",
+          "sec_details": "ISC- 66%; ICSE- 87%",
+          "color": "#ffe54a",
+          "text": "#1d1d1d"
+        },
+        {
+          "title": "The Scindia School",
+          "duration": "2008 - 2011",
+          "location_city": "Gwalior",
+          "location_state": "Madhya Pradesh",
+          "location_country": "IN",
+          "description": "High school",
+          "sec_details": "",
+          "color": "#ffd448",
+          "text": "#1d1d1d"
+        },
+        {
+          "title": "St. Joseph's Co-ed School ",
+          "duration": "2003 - 2007",
+          "location_city": "Bhopal",
+          "location_state": "Madhya Pradesh",
+          "location_country": "IN",
+          "description": "Middle school",
+          "sec_details": "",
+          "color": "#ffc446",
+          "text": "#1d1d1d"
+        }
+      ],
+      "route": "#",
+      "initialColor": "#007991",
+      "finalColor": "#78ffd6",
+      "icon": "GiBookshelf"
+    },
+    {
+      "title": "Contact",
+      "value": [
+        {
+          "title": "instagram",
+          "link": ""
+        },
+        {
+          "title": "linkedin",
+          "link": ""
+        },
+        {
+          "title": "github",
+          "link": ""
+        },
+        {
+          "title": "instagram",
+          "link": ""
+        }
+      ],
+      "route": "#",
+      "initialColor": "#11998e",
+      "finalColor": "#38ef7d",
+      "icon": "TiSocialAtCircular"
+    },
+    {
+      "title": "Work Experience",
+      "value": [
+        {
+          "title": "HUDE Labs",
+          "description": "Website Development",
+          "duration": "3 Months",
+          "location": "Bhopal, Madhya Pradesh 462024, IN"
+        },
+        {
+          "title": "Emote Electric",
+          "description":
+            "Website Development, Android and iOS App Development, Hosting Solutions, SEO and Hardware Interfacing",
+          "duration": "3 Months",
+          "location": "Coimbatore, Tamil Nadu 641032, IN"
+        }
+      ],
+      "route": "#",
+      "initialColor": "#e1eec3",
+      "finalColor": "#f05053",
+      "icon": "GoRepo"
+    }
+  ]
+}
