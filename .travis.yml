@@ -11,12 +11,11 @@ before_deploy:
   - yarn build
 env:
   - CI=true
-after_success:
-  - chmod +x ./extra/publish.sh
-  - ./extra/publish.sh
 deploy:
-  provider: script
-  edge: true
-  script: netlify deploy --dir=build --prod
+  provider: netlify
+  site: pranjaljain.tech
+  auth: $NETLIFY_ACCESS_TOKEN
+  edge: true # opt in to dpl v2
+  prod: false
   on:
     branch: master
