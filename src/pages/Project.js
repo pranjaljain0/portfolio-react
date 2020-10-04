@@ -7,16 +7,16 @@ import homecards from "../data/homecards.json";
 function Project(props) {
   var project_id = props.match.params.project_id;
 
-  const projectsData = homecards.data.find((data)=>data.title == "Projects");
-  const projectData = projectsData?.value ? projectsData.value.find((project) => project.id == project_id) : {}
+  const projectsData = homecards.data.find((data) => data.title == "Projects");
+  const projectData = projectsData?.value ? projectsData.value.find((project) => project.id === project_id) : {}
 
   return (
     <>
       <Navigation />
       <Container className="innerContainer" fluid>
-        <Row style={{marginTop:30}}> 
+        <Row style={{ marginTop: 30 }}>
           <Col>
-            {Object.entries(projectData).map(([key, value], index)=>{
+            {Object.entries(projectData).map(([key, value], index) => {
               return (
                 <React.Fragment key={`project-info-element-${index}`}>
                   <h4>{key}</h4>
