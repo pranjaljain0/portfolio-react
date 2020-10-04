@@ -207,6 +207,7 @@ a.projectLink {
 .project_list_item_link {
   text-decoration: none;
   color: #fff;
+  cursor: pointer;
 }
 
 .project_list_item_link:focus,

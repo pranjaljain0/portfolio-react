@@ -1,10 +1,11 @@
-
 language: node_js
 node_js:
   - "stable"
 cache:
   directories:
     - node_modules
+before_script:
+ - yarn install
 script:
   - npm test
 before_deploy:
@@ -13,8 +14,9 @@ before_deploy:
 env:
   - CI=true
 deploy:
-  provider: script
-  edge: true
-  script: netlify deploy --dir=build --prod
+  provider: netlify
+  site: pranjaljain.tech
+  auth: $NETLIFY_ACCESS_TOKEN
+  edge: true # opt in to dpl v2
   on:
     branch: master
