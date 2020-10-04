@@ -67,6 +67,7 @@ body,
   display: flex;
   margin: 0 !important;
   padding: 0 !important;
+  padding: 30px 20px;
 }
 
 .RightLowerSec {
