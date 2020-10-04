@@ -1,12 +1,16 @@
 import React from "react";
 import { Badge } from "react-bootstrap";
+import { useHistory } from 'react-router-dom';
 
 function ProjectList({ ProjectListVal }) {
+
+  const history = useHistory();
+
   return (
     <div>
-      {ProjectListVal.map((Obj, index) => {
+      {ProjectListVal && ProjectListVal.map((Obj, index) => {
         return (
-          <span className="project_list_item_link">
+          <span key={`project-list-item-${index}`} className="project_list_item_link" onClick={() => Obj?.id && history.push(`/project/${Obj.id}`)}>
             <div
               style={{
                 background:
