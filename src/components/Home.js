@@ -5,7 +5,6 @@ import Left from "./Left";
 import HomeCard from "./HomeCard";
 
 export default function Home({ name }) {
-  // const [HomeCards, setHomeCards] = useState(
   let HomeCards = [
     {
       title: "Projects",

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-// import { FaInstagram } from "react-icons/fa";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import {
   InputGroup,

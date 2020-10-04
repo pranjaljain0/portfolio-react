@@ -1,6 +1,6 @@
 import React from "react";
 import Typed from "react-typed";
-function LeftText({ name }) {
+function LeftText() {
   return (
     <div className="leftText">
       <div className="flex-fix">

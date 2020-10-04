@@ -80,7 +80,6 @@ body,
 }
 
 .ColStyle {
-  /* background-color: #1d1d1d; */
   background: linear-gradient(0deg, #434343, #000);
   color: #fff;
   margin: 0 !important;
@@ -181,7 +180,6 @@ a.projectLink {
 }
 
 .RightUpperSecContent p {
-  /* padding: 0px 100px 0px 0px; */
   margin: 0px 0px;
 }
 
@@ -247,10 +245,6 @@ a.projectLink {
   .LeftSec {
     height: 100vh;
   }
-
-  .leftText {
-    /* padding: 4em; */
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -258,8 +252,5 @@ a.projectLink {
 
   .LeftSec {
     height: 100vh;
-  }
-
-  .leftText {
   }
 }
