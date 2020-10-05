@@ -1,27 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-
-import {
-  FaPuzzlePiece,
-  FaDumbbell,
-  FaGuitar,
-  FaNetworkWired,
-} from "react-icons/fa";
-import { MdComputer, MdCardTravel } from "react-icons/md";
+import { HOBBY_ICONS } from "../constants/hobby";
 
 function hobbyIconCheck(iconName, size) {
-  if (iconName === "FaPuzzlePiece")
-    return <FaPuzzlePiece color="#fff" size={size} />;
-  else if (iconName === "MdComputer")
-    return <MdComputer color="#fff" size={size} />;
-  else if (iconName === "FaDumbbell")
-    return <FaDumbbell color="#fff" size={size} />;
-  else if (iconName === "MdCardTravel")
-    return <MdCardTravel color="#fff" size={size} />;
-  else if (iconName === "FaNetworkWired")
-    return <FaNetworkWired color="#fff" size={size} />;
-  else if (iconName === "FaGuitar")
-    return <FaGuitar color="#fff" size={size} />;
+  const HobbyIcon = HOBBY_ICONS[iconName];
+  return <HobbyIcon color="#fff" size={size} />;
 }
 
 const Card = styled.div`

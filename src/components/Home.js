@@ -7,10 +7,8 @@ import homecards from "../data/homecards.json"
 
 
 export default function Home({ name }) {
-  // const [HomeCards, setHomeCards] = useState(
-
   const HomeCards = homecards.data;
- 
+
   return (
     <div>
       <Navigation />
