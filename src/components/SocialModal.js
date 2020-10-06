@@ -1,17 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
-import {
-  InputGroup,
-  FormControl,
-  Button,
-  Container,
-} from "react-bootstrap";
+import React from 'react';
+import styled from 'styled-components';
+import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
+import { InputGroup, FormControl, Button, Container } from 'react-bootstrap';
 
 const Social = styled.div`
   display: flex;
   flex-direction: column;
-  height: 50vh;
+  min-height: 50vh;
   padding: 5px;
 `;
 
@@ -28,7 +23,7 @@ const CustomLink = styled.a`
     color: inherit;
     text-decoration: none;
   }
-`
+`;
 
 const Icon = styled.div`
   flex: 1;
@@ -41,12 +36,12 @@ const Icon = styled.div`
   vertical-align: middle;
   background: #d6249f;
   ${(props) => {
-    if (props.label === "instagram") {
-      return "background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);";
-    } else if (props.label === "github") {
-      return "background: linear-gradient(to top, #7dbbe6 0%,#00acee 100%); margin-right: 20px;";
-    } else if (props.label === "linkedin") {
-      return "background: linear-gradient(to top, #0e76a8 0%,#00acee 100%);";
+    if (props.label === 'instagram') {
+      return 'background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);';
+    } else if (props.label === 'github') {
+      return 'background: linear-gradient(to top, #7dbbe6 0%,#00acee 100%); margin-right: 20px;';
+    } else if (props.label === 'linkedin') {
+      return 'background: linear-gradient(to top, #0e76a8 0%,#00acee 100%);';
     }
   }}
   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
@@ -68,11 +63,18 @@ function SocialModal({ SocialModalObj }) {
         <SocialIcons>
           <Icon label="github">
             <AiOutlineGithub size={35} />
-            <CustomLink href="https://github.com/pranjaljain0" target="_blank">@pranjaljain0</CustomLink>
+            <CustomLink href="https://github.com/pranjaljain0" target="_blank">
+              @pranjaljain0
+            </CustomLink>
           </Icon>
           <Icon label="linkedin">
             <AiOutlineLinkedin size={35} />
-            <CustomLink href="https://www.linkedin.com/in/pranjaljain0/" target="_blank">@pranjaljain0</CustomLink>
+            <CustomLink
+              href="https://www.linkedin.com/in/pranjaljain0/"
+              target="_blank"
+            >
+              @pranjaljain0
+            </CustomLink>
           </Icon>
         </SocialIcons>
 
@@ -98,17 +100,14 @@ function SocialModal({ SocialModalObj }) {
             aria-label="With textarea"
             placeholder="Write some description"
             style={{
-              resize: "none",
-              height: 100
+              resize: 'none',
+              height: 100,
             }}
           />
         </InputGroup>
 
         <ButtonForm>
-          <Button
-            variant="outline-secondary"
-            className="float-right"
-          >
+          <Button variant="outline-secondary" className="float-right">
             Submit
           </Button>
         </ButtonForm>
