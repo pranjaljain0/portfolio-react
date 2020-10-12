@@ -35,6 +35,8 @@ jobs:
         with:
           vercel-token: ${{ secrets.ZEIT_TOKEN }} # Required
           vercel-args: '--prod' #Optional
+          vercel-org-id: ${{ secrets.ORG_ID}}  #Required
+          vercel-project-id: ${{ secrets.PROJECT_ID}} #Required 
           
           # Run Lighthouse reports in parallel of E2E tests
   run-lighthouse-tests:
