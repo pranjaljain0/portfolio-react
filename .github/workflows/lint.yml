@@ -19,8 +19,7 @@ jobs:
       # TODO: Install your linters here
 
       - name: Insatll Prettier
-        uses: |
-          npm install --save-dev --save-exact prettier
+        uses: "npm install --save-dev --save-exact prettier"
 
       - name: Run linters
         uses: samuelmeuli/lint-action@v1
