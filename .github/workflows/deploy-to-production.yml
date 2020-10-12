@@ -31,10 +31,10 @@ jobs:
     needs: setup-environment
     steps:
       - uses: actions/checkout@v1 # Get last commit pushed - XXX See https://github.com/actions/checkout
-      - name: Deploying on Zeit
-        run: yarn deploy:production --token $ZEIT_TOKEN
-        env:
-          ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }} # Passing github's secret to the worker
+      - uses: amondnet/vercel-action@v19
+        with:
+          vercel-token: ${{ secrets.ZEIT_TOKEN }} # Required
+          vercel-args: '--prod' #Optional
           
           # Run Lighthouse reports in parallel of E2E tests
   run-lighthouse-tests:
