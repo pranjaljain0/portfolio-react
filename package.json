@@ -43,7 +43,6 @@
   },
   "devDependencies": {
     "canvas": "^2.6.1",
-    "eslint": "^7.11.0",
     "prettier": "2.1.2"
   }
 }
