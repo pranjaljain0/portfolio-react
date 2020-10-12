@@ -1,0 +1,55 @@
+# Summary:
+# Creates a new deployment on Zeit's platform, when anything is pushed in any branch (except for the "master" branch).
+# Read ./README.md for extensive documentation
+
+name: Deploy to Zeit (staging)
+
+on:
+  push:
+    branches-ignore:
+      - 'master'
+
+jobs:
+  # Configures the deployment environment, install dependencies (like node, npm, etc.) that are requirements for the upcoming jobs
+  # Ex: Necessary to run `yarn deploy`
+  setup-environment:
+    name: Setup deployment environment (Ubuntu 18.04 - Node 10.x)
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Installing node.js
+        uses: actions/setup-node@v1 # Used to install node environment - XXX https://github.com/actions/setup-node
+        with:
+          node-version: '10.x' # Use the same node.js version as the one Zeit's uses (currently node10.x)
+
+  # Starts a Zeit deployment, using the staging configuration file of the default institution
+  # The default institution is the one defined in the `now.json` file (which is a symlink to the actual file)
+  # N.B: It's Zeit that will perform the actual deployment
+  start-staging-deployment:
+    name: Starts Zeit deployment (staging) (Ubuntu 18.04)
+    runs-on: ubuntu-18.04
+    needs: setup-environment
+    steps:
+      - uses: actions/checkout@v1 # Get last commit pushed - XXX See https://github.com/actions/checkout
+      - name: Deploying on Zeit
+        run: yarn deploy:$(cat now.json | jq -r '.build.env.CUSTOMER_REF') --token $ZEIT_TOKEN
+        env:
+          ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }} # Passing github's secret to the worker
+
+      # On deployment failure, add a comment to the PR
+      - name: Comment PR (Deployment failure)
+        uses: unsplash/comment-on-pr@master
+        if: failure()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_CI_PR_COMMENT }}
+        with:
+          msg: "[GitHub Actions]\nDeployment FAILED\n\t Commit ${{ github.sha }} failed to deploy to ${{ env.ZEIT_DEPLOYMENT_URL }} (click to see logs)"
+
+
+      # On deployment success, add a comment to the PR
+      - name: Comment PR (Deployment success)
+        uses: unsplash/comment-on-pr@master
+        if: success()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_CI_PR_COMMENT }}
+        with:
+          msg: "[GitHub Actions]\nDeployment SUCCESS\n\t Commit ${{ github.sha }} successfully deployed to ${{ env.ZEIT_DEPLOYMENT_URL }}\n\tDeployment aliased as ${{ env.ZEIT_DEPLOYEMENT_ALIAS }}"
