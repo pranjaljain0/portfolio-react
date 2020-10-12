@@ -11,11 +11,6 @@ jobs:
       - name: Check out Git repository
         uses: actions/checkout@v2
 
-      - name: Format
-        run: |
-          npm ci
-          npm run format
-
       # TODO: Install your linters here
 
       - name: Insatll Prettier
