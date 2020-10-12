@@ -7,7 +7,7 @@ name: Deploy to Zeit (staging)
 on:
   push:
     branches-ignore:
-      - 'master'
+      - "master"
 
 jobs:
   # Configures the deployment environment, install dependencies (like node, npm, etc.) that are requirements for the upcoming jobs
@@ -19,7 +19,7 @@ jobs:
       - name: Installing node.js
         uses: actions/setup-node@v1 # Used to install node environment - XXX https://github.com/actions/setup-node
         with:
-          node-version: '10.x' # Use the same node.js version as the one Zeit's uses (currently node10.x)
+          node-version: "10.x" # Use the same node.js version as the one Zeit's uses (currently node10.x)
 
   # Starts a Zeit deployment, using the staging configuration file of the default institution
   # The default institution is the one defined in the `now.json` file (which is a symlink to the actual file)
@@ -33,11 +33,10 @@ jobs:
       - uses: amondnet/vercel-action@v19
         with:
           vercel-token: ${{ secrets.ZEIT_TOKEN }} # Required
-          vercel-args: '--stage' #Optional
-          vercel-org-id: ${{ secrets.ORG_ID}}  #Required
-          vercel-project-id: ${{ secrets.PROJECT_ID}} #Required 
+          vercel-org-id: ${{ secrets.ORG_ID}} #Required
+          vercel-project-id: ${{ secrets.PROJECT_ID}} #Required
 
-# On deployment failure, add a comment to the PR
+      # On deployment failure, add a comment to the PR
       - name: Comment PR (Deployment failure)
         uses: unsplash/comment-on-pr@master
         if: failure()
@@ -45,7 +44,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
         with:
           msg: "[GitHub Actions]\nDeployment FAILED\n\t Commit ${{ github.sha }} failed to deploy to ${{ env.ZEIT_DEPLOYMENT_URL }} (click to see logs)"
-
 
       # On deployment success, add a comment to the PR
       - name: Comment PR (Deployment success)
