@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-18.04
     needs: setup-environment
     steps:
-      - uses: actions/checkout@v1 # Get last commit pushed - XXX See https://github.com/actions/checkout
+      - uses: actions/checkout@v2
       - uses: amondnet/vercel-action@v19
         with:
           vercel-token: ${{ secrets.ZEIT_TOKEN }} # Required
