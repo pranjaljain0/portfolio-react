@@ -11,7 +11,10 @@ jobs:
       - name: Check out Git repository
         uses: actions/checkout@v2
 
-      # TODO: Install your linters here
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
 
       - name: Insatll Prettier
         run: "npm install prettier"
@@ -23,4 +26,5 @@ jobs:
         uses: wearerequired/lint-action@v1.6.0
         with:
           github_token: ${{ secrets.GIT_TOKEN }}
+          eslint: true
           prettier: true
