@@ -7,8 +7,8 @@ name: Deploy to Zeit (production)
 on:
   push:
     branches:
-      - 'master'
-      - 'lighthouse-integration'
+      - "master"
+      - "lighthouse-integration"
 
 jobs:
   # Configures the deployment environment, install dependencies (like node, npm, etc.) that are requirements for the upcoming jobs
@@ -17,16 +17,25 @@ jobs:
     name: Setup deployment environment (Ubuntu 18.04 - Node 12.x)
     runs-on: ubuntu-18.04
     steps:
+      - name: Check out Git repository
+      uses: actions/checkout@v2
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
       - name: Install Node.js dependencies
         run: npm install
 
       - name: Run linters
         uses: wearerequired/lint-action@v1.6.0
         with:
-          github_token: ${{ secrets.github_token }}
+          github_token: ${{ secrets.GIT_TOKEN }}
           # Enable linters
           eslint: true
           prettier: true
+
   # Starts a Zeit deployment, using the production configuration file of the default institution
   # The default institution is the one defined in the `now.json` file (which is a symlink to the actual file)
   # N.B: It's Zeit that will perform the actual deployment
@@ -39,10 +48,10 @@ jobs:
       - uses: amondnet/vercel-action@v19
         with:
           vercel-token: ${{ secrets.ZEIT_TOKEN }} # Required
-          vercel-args: '--prod' #Optional
-          vercel-org-id: ${{ secrets.ORG_ID}}  #Required
-          vercel-project-id: ${{ secrets.PROJECT_ID}} #Required 
-          
+          vercel-args: "--prod" #Optional
+          vercel-org-id: ${{ secrets.ORG_ID}} #Required
+          vercel-project-id: ${{ secrets.PROJECT_ID}} #Required
+
           # Run Lighthouse reports in parallel of E2E tests
   run-lighthouse-tests:
     name: Run LightHouse checks (Ubuntu 18.04)
