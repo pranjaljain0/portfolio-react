@@ -17,6 +17,5 @@ jobs:
         uses: samuelmeuli/lint-action@v1
         with:
           github_token: ${{ secrets.GIT_TOKEN }}
-          eslint: true
           prettier: true
           # TODO: Enable your linters here
