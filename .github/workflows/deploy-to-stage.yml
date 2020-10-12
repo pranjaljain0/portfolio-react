@@ -2,7 +2,7 @@
 # Creates a new deployment on Zeit's platform, when anything is pushed in any branch (except for the "master" branch).
 # Read ./README.md for extensive documentation
 
-name: Deploy to Zeit (staging)
+name: Deploy to Vercel (staging)
 
 on:
   push:
@@ -35,22 +35,22 @@ jobs:
           vercel-org-id: ${{ secrets.ORG_ID}} #Required
           vercel-project-id: ${{ secrets.PROJECT_ID}} #Required
 
-      # On deployment failure, add a comment to the PR
-      - name: Comment PR (Deployment failure)
-        uses: unsplash/comment-on-pr@master
-        if: failure()
-        env:
-          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
-        with:
-          msg: "[GitHub Actions]\nDeployment FAILED\n\t Commit ${{ github.sha }} failed to deploy to ${{ env.ZEIT_DEPLOYMENT_URL }} (click to see logs)"
-          check_for_duplicate_msg: true # OPTIONAL
+      # # On deployment failure, add a comment to the PR
+      # - name: Comment PR (Deployment failure)
+      #   uses: unsplash/comment-on-pr@master
+      #   if: failure()
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+      #   with:
+      #     msg: "[GitHub Actions]\nDeployment FAILED\n\t Commit ${{ github.sha }} failed to deploy to ${{ env.ZEIT_DEPLOYMENT_URL }} (click to see logs)"
+      #     check_for_duplicate_msg: true # OPTIONAL
 
-      # On deployment success, add a comment to the PR
-      - name: Comment PR (Deployment success)
-        uses: unsplash/comment-on-pr@master
-        if: success()
-        env:
-          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
-        with:
-          msg: "[GitHub Actions]\nDeployment SUCCESS\n\t Commit ${{ github.sha }} successfully deployed to ${{ env.ZEIT_DEPLOYMENT_URL }}\n\tDeployment aliased as ${{ env.ZEIT_DEPLOYEMENT_ALIAS }}"
-          check_for_duplicate_msg: true # OPTIONAL
+      # # On deployment success, add a comment to the PR
+      # - name: Comment PR (Deployment success)
+      #   uses: unsplash/comment-on-pr@master
+      #   if: success()
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+      #   with:
+      #     msg: "[GitHub Actions]\nDeployment SUCCESS\n\t Commit ${{ github.sha }} successfully deployed to ${{ env.ZEIT_DEPLOYMENT_URL }}\n\tDeployment aliased as ${{ env.ZEIT_DEPLOYEMENT_ALIAS }}"
+      #     check_for_duplicate_msg: true # OPTIONAL

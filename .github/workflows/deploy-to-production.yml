@@ -2,7 +2,7 @@
 # Creates a new deployment on Zeit's platform, when anything is pushed in any branch (except for the "master" branch).
 # Read ./README.md for extensive documentation
 
-name: Deploy to Zeit (production)
+name: Deploy to Vercel (production)
 
 on:
   push:
