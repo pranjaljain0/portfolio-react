@@ -43,6 +43,10 @@ body,
   z-index: 999;
 }
 
+.navbar_logo {
+  max-height: 50px;
+}
+
 .cols {
   margin: 0 !important;
   padding: 0 !important;
