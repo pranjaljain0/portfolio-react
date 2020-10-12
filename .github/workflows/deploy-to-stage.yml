@@ -42,7 +42,7 @@ jobs:
         uses: unsplash/comment-on-pr@master
         if: failure()
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_CI_PR_COMMENT }}
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
         with:
           msg: "[GitHub Actions]\nDeployment FAILED\n\t Commit ${{ github.sha }} failed to deploy to ${{ env.ZEIT_DEPLOYMENT_URL }} (click to see logs)"
 
@@ -52,6 +52,6 @@ jobs:
         uses: unsplash/comment-on-pr@master
         if: success()
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_CI_PR_COMMENT }}
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
         with:
           msg: "[GitHub Actions]\nDeployment SUCCESS\n\t Commit ${{ github.sha }} successfully deployed to ${{ env.ZEIT_DEPLOYMENT_URL }}\n\tDeployment aliased as ${{ env.ZEIT_DEPLOYEMENT_ALIAS }}"
