@@ -9,7 +9,8 @@ export class Navigation extends Component {
     return (
       <Navbar variant="dark" expand="lg" fixed="top" className="nvabar-custon">
         <Navbar.Brand href="/">
-          <img src={logo} alt="logo" className="navbar_logo" /> Pranjal Jain
+          <img src={logo} alt="Pranjal Jain" className="navbar_logo" /> Pranjal
+          Jain
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
