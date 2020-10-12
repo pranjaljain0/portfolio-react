@@ -17,16 +17,21 @@ jobs:
     name: Setup deployment environment (Ubuntu 18.04 - Node 12.x)
     runs-on: ubuntu-18.04
     steps:
-      - name: Installing node.js
-        uses: actions/setup-node@v1 # Used to install node environment - XXX https://github.com/actions/setup-node
-        with:
-          node-version: '12.x' # Use the same node.js version as the one Zeit's uses (currently node12.x)
+      - name: Install Node.js dependencies
+        run: npm install
 
+      - name: Run linters
+        uses: wearerequired/lint-action@v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          # Enable linters
+          eslint: true
+          prettier: true
   # Starts a Zeit deployment, using the production configuration file of the default institution
   # The default institution is the one defined in the `now.json` file (which is a symlink to the actual file)
   # N.B: It's Zeit that will perform the actual deployment
   start-production-deployment:
-    name: Starts Zeit deployment (production) (Ubuntu 18.04)
+    name: Starts Vercel deployment (production) (Ubuntu 18.04)
     runs-on: ubuntu-18.04
     needs: setup-environment
     steps:
