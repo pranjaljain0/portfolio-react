@@ -38,7 +38,7 @@ jobs:
 
       # On deployment failure, add a comment to the PR
       - name: Comment PR (Deployment failure)
-        uses: unsplash/comment-on-pr@master
+        uses: pranjaljain0/comment-on-pr@master
         if: failure()
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
@@ -47,7 +47,7 @@ jobs:
 
       # On deployment success, add a comment to the PR
       - name: Comment PR (Deployment success)
-        uses: unsplash/comment-on-pr@master
+        uses: pranjaljain0/comment-on-pr@master
         if: success()
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
