@@ -15,7 +15,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12
-        run: npm install
+
+      - name: Insatll Prettier
+        run: "npm install prettier"
+
+      - name: Insatll ESLint
+        run: "npm i eslint@6.8.0"
 
       - name: Run linters
         uses: wearerequired/lint-action@v1.6.0
