@@ -25,17 +25,19 @@ jobs:
   # The default institution is the one defined in the `now.json` file (which is a symlink to the actual file)
   # N.B: It's Zeit that will perform the actual deployment
   start-staging-deployment:
-    name: Starts Zeit deployment (staging) (Ubuntu 18.04)
+    name: Starts Zeit deployment (Staging) (Ubuntu 18.04)
     runs-on: ubuntu-18.04
     needs: setup-environment
     steps:
-      - uses: actions/checkout@v1 # Get last commit pushed - XXX See https://github.com/actions/checkout
-      - name: Deploying on Zeit
-        run: yarn deploy:$(cat now.json | jq -r '.build.env.CUSTOMER_REF') --token $ZEIT_TOKEN
-        env:
-          ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }} # Passing github's secret to the worker
+      - uses: actions/checkout@v2
+      - uses: amondnet/vercel-action@v19
+        with:
+          vercel-token: ${{ secrets.ZEIT_TOKEN }} # Required
+          vercel-args: '--stage' #Optional
+          vercel-org-id: ${{ secrets.ORG_ID}}  #Required
+          vercel-project-id: ${{ secrets.PROJECT_ID}} #Required 
 
-      # On deployment failure, add a comment to the PR
+# On deployment failure, add a comment to the PR
       - name: Comment PR (Deployment failure)
         uses: unsplash/comment-on-pr@master
         if: failure()
