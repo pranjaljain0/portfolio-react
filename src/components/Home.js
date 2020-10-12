@@ -3,14 +3,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import Navigation from "./Navigation";
 import Left from "./Left";
 import HomeCard from "./HomeCard";
-import homecards from "../data/homecards.json"
-
+import homecards from "../data/homecards.json";
 
 export default function Home({ name }) {
   // const [HomeCards, setHomeCards] = useState(
 
   const HomeCards = homecards.data;
- 
+
   return (
     <div>
       <Navigation />
