@@ -17,8 +17,7 @@ jobs:
         run: "npm install --save-dev --save-exact prettier"
 
       - name: Run linters
-        uses: samuelmeuli/lint-action@v1
+        uses: wearerequired/lint-action@v1.6.0
         with:
           github_token: ${{ secrets.GIT_TOKEN }}
           prettier: true
-          # TODO: Enable your linters here
