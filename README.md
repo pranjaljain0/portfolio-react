@@ -1,4 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/25fd2f52-178e-4f26-b666-e9260f26a399/deploy-status)](https://app.netlify.com/sites/elegant-darwin-976149/deploys) [![Build Status](https://travis-ci.com/pranjaljain0/Portfolio-React.svg?branch=master)](https://travis-ci.com/pranjaljain0/Portfolio-React)
 ### You can fork it and create your own portfolio.
 # #Hacktoberfest
 
