@@ -16,5 +16,5 @@ jobs:
       - name: Run linters
         uses: samuelmeuli/lint-action@v1
         with:
-          github_token: ${{ secrets.github_token }}
+          github_token: ${{ secrets.GIT_TOKEN }}
           # TODO: Enable your linters here
