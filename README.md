@@ -1,5 +1,7 @@
 ### You can fork it and create your own portfolio.
+
 # #Hacktoberfest
+
 Website [parnjaljain.tech](https://www.pranjaljain.tech)
 **Register [here](https://hacktoberfest.digitalocean.com) for Hacktoberfest and make four pull requests (PRs) between October 1-31 to earn a free t-shirt.**
 
@@ -46,6 +48,7 @@ So, yes! You can win a T-Shirt and few awesome stickers to attach on your laptop
 ## Note:
 
 ### Use Lorem Ipsum generator where you need to add text.
+
 [Lipsum generator](https://www.lipsum.com/)
 
 # Best of Luck

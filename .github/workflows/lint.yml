@@ -1,4 +1,4 @@
-name: Lint
+name: Linting Tests
 
 on: push
 
@@ -11,10 +11,16 @@ jobs:
       - name: Check out Git repository
         uses: actions/checkout@v2
 
-      # TODO: Install your linters here
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - name: Insatll Prettier
+        run: "npm install prettier"
+
+      - name: Insatll ESLint
+        run: "npm i eslint@6.8.0"
 
       - name: Run linters
-        uses: samuelmeuli/lint-action@v1
-        with:
-          github_token: ${{ secrets.GIT_TOKEN }}
-          # TODO: Enable your linters here
+        run: "npx prettier --check ."

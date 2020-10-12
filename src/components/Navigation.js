@@ -2,11 +2,15 @@ import React, { Component } from "react";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import resume from "../Downloadables/Resume.pdf";
+import logo from "../assets/Image/logo.png";
+
 export class Navigation extends Component {
   render() {
     return (
       <Navbar variant="dark" expand="lg" fixed="top" className="nvabar-custon">
-        <Navbar.Brand href="/">Pranjal Jain</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <img src={logo} alt="logo" className="navbar_logo" /> Pranjal Jain
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto"></Nav>

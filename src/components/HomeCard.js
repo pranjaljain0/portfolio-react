@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Col, } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import { GiBookshelf, GiThorHammer } from "react-icons/gi";
 import { FaGuitar } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
