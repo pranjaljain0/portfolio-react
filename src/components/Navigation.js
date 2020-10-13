@@ -2,16 +2,16 @@ import React, { Component } from "react";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import resume from "../Downloadables/Resume.pdf";
-import logo from "../assets/Image/logo.png";
+import { ReactComponent as PortfolioLogo } from "../assets/Image/logo.svg";
 
 export class Navigation extends Component {
   render() {
     return (
       <Navbar variant="dark" expand="lg" fixed="top" className="nvabar-custon">
-        <Navbar.Brand href="/">
-          <img src={logo} alt="Pranjal Jain" className="navbar_logo" /> Pranjal
-          Jain
-        </Navbar.Brand>
+        <a href="/" className="navbar_logo_container">
+          <PortfolioLogo className="navbar_logo" />
+          <span>Pranjal Jain</span>
+        </a>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto"></Nav>

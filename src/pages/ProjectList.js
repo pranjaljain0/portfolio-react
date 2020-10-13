@@ -26,10 +26,14 @@ function ProjectList({ ProjectListVal }) {
                 }}
                 className="project_list_item"
               >
-                <Badge pill variant="primary">
-                  {Obj.badgeTitle}
-                </Badge>
-                <Badge pill variant="secondary">
+                {Object.keys(Obj.badgeTitle).map((item, index) => {
+                  return (
+                    <Badge pill variant="primary" className="chip">
+                      {Obj.badgeTitle[item]}
+                    </Badge>
+                  );
+                })}
+                <Badge pill variant="secondary" className="chip">
                   {Obj.language}
                 </Badge>
                 <p>{Obj.title}</p>

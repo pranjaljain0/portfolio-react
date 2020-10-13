@@ -8,9 +8,15 @@
   src: url(./assets/fonts/AvenirBold.otf);
 }
 
+@font-face {
+  font-family: GoogleSans;
+  src: url("./assets/fonts/Google sans/GoogleSans.woff2") format("woff2"); /* Super Modern Browsers */
+}
+
 * {
   box-sizing: border-box;
-  font-family: "Avenir";
+  font-family: "GoogleSans", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
 }
 
 html,
@@ -43,8 +49,23 @@ body,
   z-index: 999;
 }
 
+.navbar_logo_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar_logo_container span {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8em;
+}
+
 .navbar_logo {
-  max-height: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
 }
 
 .cols {
@@ -234,7 +255,9 @@ a.projectLink {
 }
 
 .project_list_item .badge {
-  margin: 10px 0;
+  margin: 4px 6px 4px 0px;
+  font-size: 0.8em;
+  padding: 6px 12px;
 }
 
 .VerticalTimeline::before {
