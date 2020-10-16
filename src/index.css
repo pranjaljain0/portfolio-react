@@ -61,6 +61,10 @@ body,
   font-size: 1.8em;
 }
 
+.navbar_logo_container:hover {
+  text-decoration: none;
+}
+
 .navbar_logo {
   height: 50px;
   margin: 0;
