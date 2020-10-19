@@ -16,6 +16,9 @@ export class Navigation extends Component {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto"></Nav>
           <Nav className="navbar-right">
+            <Nav.Link href="http://blog.pranjaljain.tech">
+              <Button className="moving-gradient">Blogs</Button>
+            </Nav.Link>
             <Nav.Link href={resume}>
               <Button variant="light">Curriculum Vitae (CV)</Button>
             </Nav.Link>
