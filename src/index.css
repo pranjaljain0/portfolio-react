@@ -119,6 +119,14 @@ body,
   }
 }
 
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .navbar_logo {
   height: 50px;
   margin: 0;

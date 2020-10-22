@@ -1,12 +1,14 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import resume from "../Downloadables/Resume.pdf";
 import { ReactComponent as PortfolioLogo } from "../assets/Image/logo.svg";
+import ResumeModal from "./ResumeModal";
 
-export class Navigation extends Component {
-  render() {
-    return (
+function Navigation() {
+  const [showResumeModal, setShowResumeModal] = useState(false);
+
+  return (
+    <>
       <Navbar variant="dark" expand="lg" fixed="top" className="nvabar-custon">
         <a href="/" className="navbar_logo_container">
           <PortfolioLogo className="navbar_logo" />
@@ -19,7 +21,12 @@ export class Navigation extends Component {
             <Nav.Link href="http://blog.pranjaljain.tech">
               <Button className="moving-gradient">Blogs</Button>
             </Nav.Link>
-            <Nav.Link href="https://github.com/pranjaljain0/pranjaljain0/raw/master/Pranjal_Jain_CV.pdf">
+            <Nav.Link
+              onClick={() => {
+                setShowResumeModal(true);
+              }}
+            >
+              {/* <Nav.Link href="https://github.com/pranjaljain0/pranjaljain0/raw/master/Pranjal_Jain_CV.pdf"> */}
               <Button variant="light">Curriculum Vitae (CV)</Button>
             </Nav.Link>
             <Nav.Link href="https://github.com/pranjaljain0">
@@ -31,8 +38,14 @@ export class Navigation extends Component {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    );
-  }
+      <ResumeModal
+        showResumeModal={showResumeModal}
+        closeModal={() => {
+          setShowResumeModal(!showResumeModal);
+        }}
+      />
+    </>
+  );
 }
 
 export default Navigation;
