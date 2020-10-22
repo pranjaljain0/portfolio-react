@@ -19,7 +19,7 @@ export class Navigation extends Component {
             <Nav.Link href="http://blog.pranjaljain.tech">
               <Button className="moving-gradient">Blogs</Button>
             </Nav.Link>
-            <Nav.Link href={resume}>
+            <Nav.Link href="https://github.com/pranjaljain0/pranjaljain0/raw/master/Pranjal_Jain_CV.pdf">
               <Button variant="light">Curriculum Vitae (CV)</Button>
             </Nav.Link>
             <Nav.Link href="https://github.com/pranjaljain0">
