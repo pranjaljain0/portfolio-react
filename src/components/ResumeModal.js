@@ -15,7 +15,7 @@ function ResumeModal({ showResumeModal, closeModal }) {
       </Modal.Header>
       <Modal.Body>
         <iframe
-          src={Pranjal_jain_CV + "#toolbar=0"}
+          src="https://pranjaljain0.github.io/pranjaljain0/Pranjal_Jain_CV.pdf#toolbar=0"
           width="100%"
           height="700px"
           frameborder="0"
