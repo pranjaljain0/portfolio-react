@@ -47,7 +47,7 @@ function Navigation() {
             <Nav.Link href="https://github.com/pranjaljain0">
               <FaGithub color="rgba(255,255,255,0.8)" size="1.5em" />
             </Nav.Link>
-            <Nav.Link href="https://www.linkedin.com/in/pranjal-jain-736552139/">
+            <Nav.Link href="https://www.linkedin.com/in/pranjaljain0/">
               <FaLinkedin color="rgba(255,255,255,0.8)" size="1.5em" />
             </Nav.Link>
           </Nav>
