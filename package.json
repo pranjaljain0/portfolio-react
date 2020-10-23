@@ -5,7 +5,6 @@
   "dependencies": {
     "@loadable/component": "^5.14.1",
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.5.3",
     "react": "^16.14.0",
@@ -17,7 +16,6 @@
     "react-scripts": "^3.4.4",
     "react-typed": "^1.2.0",
     "react-typing-animation": "^1.6.2",
-    "react-typist": "^2.0.5",
     "react-vertical-timeline-component": "^2.6.0",
     "styled-components": "^5.2.0"
   },
