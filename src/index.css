@@ -1,15 +1,22 @@
 @font-face {
   font-family: Avenir;
+  font-display: swap;
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
   src: url(./assets/fonts/Avenir.otf);
 }
 
 @font-face {
   font-family: AvenirBold;
+  font-display: swap;
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
   src: url(./assets/fonts/AvenirBold.otf);
 }
 
 @font-face {
   font-family: GoogleSans;
+  font-display: swap;
+  font-style: normal;
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
   src: url("./assets/fonts/Google sans/GoogleSans.woff2") format("woff2"); /* Super Modern Browsers */
 }
 
