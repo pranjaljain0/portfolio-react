@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 import { ReactComponent as PortfolioLogo } from "../assets/Image/logo.svg";

@@ -1,9 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Navigation from "./Navigation";
-import Left from "./Left";
-import HomeCard from "./HomeCard";
 import homecards from "../data/homecards.json";
+import loadable from "@loadable/component";
+
+const Left = loadable(() => import("./Left"));
+const HomeCard = loadable(() => import("./HomeCard"));
 
 export default function Home({ name }) {
   // const [HomeCards, setHomeCards] = useState(

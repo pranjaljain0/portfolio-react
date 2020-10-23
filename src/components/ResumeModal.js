@@ -1,6 +1,5 @@
 import React from "react";
 import { Modal } from "react-bootstrap";
-import Pranjal_jain_CV from "../Downloadables/Pranjal_Jain_CV.pdf";
 
 function ResumeModal({ showResumeModal, closeModal }) {
   return (
@@ -15,6 +14,7 @@ function ResumeModal({ showResumeModal, closeModal }) {
       </Modal.Header>
       <Modal.Body>
         <iframe
+          title="Resume"
           src="https://pranjaljain0.github.io/pranjaljain0/Pranjal_Jain_CV.pdf#toolbar=0"
           width="100%"
           height="700px"
