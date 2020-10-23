@@ -2,8 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Navigation from "./Navigation";
 import homecards from "../data/homecards.json";
-import HomeCard from "./HomeCard"
-import Left from "./Left"
+import HomeCard from "./HomeCard";
+import Left from "./Left";
 
 export default function Home({ name }) {
   // const [HomeCards, setHomeCards] = useState(
