@@ -2,7 +2,9 @@
 
 Website [parnjaljain.tech](https://www.pranjaljain.tech)
 
-# Simple Portfolio website.
+# Portfolio website
+
+A portfolio website created using react js
 
 ## Pages:
 
