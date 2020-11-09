@@ -4,8 +4,6 @@ Website [parnjaljain.tech](https://www.pranjaljain.tech)
 
 # Simple Portfolio website.
 
-# Note:
-
 ## Pages:
 
 1. Home Page
