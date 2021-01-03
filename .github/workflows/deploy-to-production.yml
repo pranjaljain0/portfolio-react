@@ -29,7 +29,7 @@ jobs:
   # The default institution is the one defined in the `now.json` file (which is a symlink to the actual file)
   # N.B: It's Zeit that will perform the actual deployment
   start-production-deployment:
-    name: Starts Vercel deployment (production) (Ubuntu 18.04)
+    name: Starts Vercel deployment (Production) (Ubuntu 18.04)
     runs-on: ubuntu-18.04
     needs: setup-environment
     steps:
