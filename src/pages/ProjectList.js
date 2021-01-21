@@ -28,7 +28,7 @@ function ProjectList({ ProjectListVal }) {
               >
                 {Object.keys(Obj.badgeTitle).map((item, index) => {
                   return (
-                    <Badge pill variant="primary" className="chip">
+                    <Badge pill variant="primary" className="chip" key={index}>
                       {Obj.badgeTitle[item]}
                     </Badge>
                   );
