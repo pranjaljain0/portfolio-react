@@ -20,8 +20,7 @@ function Navigation() {
           <Nav className="navbar-right">
             <Nav.Link href="http://blog.pranjaljain.tech">
               <Button className="moving-gradient">Blogs</Button>
-            </Nav.Link>
-            <Nav.Link>
+            </Nav.Link>          
               <Button
                 variant="light"
                 style={{
@@ -43,7 +42,6 @@ function Navigation() {
               >
                 <FaDownload fill="rgba(0,0,0,0.5)" />
               </Button>
-            </Nav.Link>
             <Nav.Link href="https://github.com/pranjaljain0">
               <FaGithub color="rgba(255,255,255,0.8)" size="1.5em" />
             </Nav.Link>
