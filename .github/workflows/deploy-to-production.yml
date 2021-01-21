@@ -68,6 +68,8 @@ jobs:
       # Action documentation: https://github.com/marketplace/actions/lighthouse-check#usage-standard-example
       - name: Run Lighthouse
         uses: foo-software/lighthouse-check-action@v1.0.14
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         id: lighthouseCheck
         with:
           outputDirectory: /tmp/lighthouse-artifacts # Used to upload artifacts.
