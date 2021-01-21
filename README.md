@@ -6,7 +6,7 @@ Website [parnjaljain.tech](https://www.pranjaljain.tech)
 
 # Portfolio website
 
-A portfolio website created using react js published on Vercel.
+A portfolio website created using React.js published on Vercel.
 
 ## Pages:
 
