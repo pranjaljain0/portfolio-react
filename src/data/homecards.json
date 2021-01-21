@@ -44,7 +44,7 @@
           "title": "Smart Grid",
           "projectRoute": "#",
           "badgeTitle": ["Internet of things"],
-          "initialColor": "#e1eec3",
+          "initialColor": "#f12711",
           "finalColor": "#f05053",
           "language": "Ruby"
         }
