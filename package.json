@@ -4,20 +4,20 @@
   "private": true,
   "dependencies": {
     "@loadable/component": "^5.14.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/user-event": "^7.1.2",
-    "bootstrap": "^4.5.3",
-    "react": "^16.14.0",
-    "react-bootstrap": "^1.4.0",
-    "react-dom": "^16.14.0",
-    "react-icons": "^3.11.0",
-    "react-particles-js": "^3.4.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/user-event": "^12.6.0",
+    "bootstrap": "^4.6.0",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.4.3",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.1.0",
+    "react-particles-js": "^3.4.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.4",
+    "react-scripts": "^4.0.1",
     "react-typed": "^1.2.0",
     "react-typing-animation": "^1.6.2",
-    "react-vertical-timeline-component": "^2.6.0",
-    "styled-components": "^5.2.0"
+    "react-vertical-timeline-component": "^3.3.1",
+    "styled-components": "^5.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,10 +41,10 @@
     ]
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.5.0",
-    "@typescript-eslint/parser": "^4.5.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
     "canvas": "^2.6.1",
-    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react": "^7.22.0",
     "prettier": "2.1.2"
   }
 }
