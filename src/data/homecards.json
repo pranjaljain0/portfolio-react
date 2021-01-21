@@ -7,7 +7,7 @@
           "id": 1,
           "title": "Integrated Autonomous guided wheelchair",
           "projectRoute": "/project/1",
-          "badgeTitle": ["Integerated project"],
+          "badgeTitle": ["Integrated project"],
           "initialColor": "#56CCF2",
           "finalColor": "#2F80ED",
           "language": "C++"
@@ -16,7 +16,7 @@
           "id": 2,
           "title": "Multi terrain vehicle",
           "projectRoute": "#",
-          "badgeTitle": ["Integerated project"],
+          "badgeTitle": ["Integrated project"],
           "initialColor": "#373B44",
           "finalColor": "#4286f4",
           "language": "Java"
