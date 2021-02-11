@@ -165,6 +165,7 @@ body,
   display: flex;
   margin: 0 !important;
   padding: 0 !important;
+  font-size: 16px;
 }
 
 .RightLowerSec {
@@ -184,6 +185,7 @@ body,
   padding: 0 !important;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .innerColImg {
