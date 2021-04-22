@@ -1,6 +1,7 @@
+import { Button, Nav, Navbar } from "react-bootstrap";
+import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
 import React, { useState } from "react";
-import { Navbar, Nav, Button } from "react-bootstrap";
-import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
+
 import { ReactComponent as PortfolioLogo } from "../assets/Image/logo.svg";
 import ResumeModal from "./ResumeModal";
 
@@ -18,7 +19,7 @@ function Navigation() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto"></Nav>
           <Nav className="navbar-right">
-            <Nav.Link href="http://blog.pranjaljain.tech">
+            <Nav.Link href="http://blog.pranjaljain.me">
               <Button className="moving-gradient">Blogs</Button>
             </Nav.Link>
             <Nav.Link>
