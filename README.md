@@ -1,5 +1,7 @@
 ### You can fork it and create your own portfolio.
 
+![https://david-dm.org/pranjaljain0/portfolio-react.svg](https://david-dm.org/pranjaljain0/portfolio-react.svg) [![devDependencies Status](https://status.david-dm.org/gh/pranjaljain0/portfolio-react.svg?type=dev)](https://david-dm.org/pranjaljain0/portfolio-react?type=dev)
+
 I value keeping my site open source, but as you all know, plagiarism is bad so if you love it feel free to copy it and please give proper credits. If you have issues making use of this portfolio you can refer to [React docs](https://reactjs.org/docs/getting-started.html). Thanks!
 
 Website [parnjaljain.me](https://www.pranjaljain.me)
