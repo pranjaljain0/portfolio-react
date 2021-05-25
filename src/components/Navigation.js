@@ -41,14 +41,17 @@ function Navigation() {
                 style={{
                   borderRadius: "0 4px 4px 0",
                 }}
+                aria-label="Resume"
               >
-                <FaDownload fill="rgba(0,0,0,0.5)" onClick={() => window.location = "https://github.com/pranjaljain0/pranjaljain0/raw/master/Pranjal_Jain_CV.pdf"} />
+                <FaDownload
+
+                  fill="rgba(0,0,0,0.5)" onClick={() => window.location = "https://github.com/pranjaljain0/pranjaljain0/raw/master/Pranjal_Jain_CV.pdf"} />
               </Button>
             </Nav.Link>
-            <Nav.Link href="https://github.com/pranjaljain0">
+            <Nav.Link aria-label="Github" href="https://github.com/pranjaljain0">
               <FaGithub color="rgba(255,255,255,0.8)" size="1.5em" />
             </Nav.Link>
-            <Nav.Link href="https://www.linkedin.com/in/pranjaljain0/">
+            <Nav.Link aria-label="Linked In" href="https://www.linkedin.com/in/pranjaljain0/">
               <FaLinkedin color="rgba(255,255,255,0.8)" size="1.5em" />
             </Nav.Link>
           </Nav>
