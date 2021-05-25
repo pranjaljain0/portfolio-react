@@ -44,15 +44,15 @@ function Navigation() {
                 aria-label="Resume"
               >
                 <FaDownload
-
+                  aria-label="Resume"
                   fill="rgba(0,0,0,0.5)" onClick={() => window.location = "https://github.com/pranjaljain0/pranjaljain0/raw/master/Pranjal_Jain_CV.pdf"} />
               </Button>
             </Nav.Link>
             <Nav.Link aria-label="Github" href="https://github.com/pranjaljain0">
-              <FaGithub color="rgba(255,255,255,0.8)" size="1.5em" />
+              <FaGithub aria-label="Github" color="rgba(255,255,255,0.8)" size="1.5em" />
             </Nav.Link>
             <Nav.Link aria-label="Linked In" href="https://www.linkedin.com/in/pranjaljain0/">
-              <FaLinkedin color="rgba(255,255,255,0.8)" size="1.5em" />
+              <FaLinkedin aria-label="Linked In" color="rgba(255,255,255,0.8)" size="1.5em" />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
