@@ -1,12 +1,14 @@
+import { Col, Container, Row } from "react-bootstrap";
+
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Navigation from "./Navigation";
+// import Navigation from "./Navigation";
 import homecards from "../data/homecards.json";
-import HomeCard from "./HomeCard";
-import Left from "./Left";
 import loadable from "@loadable/component";
 
 const HomeAbout = loadable(() => import("./HomeAbout"));
+const Navigation = loadable(() => import("./Navigation"));
+const HomeCard = loadable(() => import("./HomeCard"));
+const Left = loadable(() => import("./Left"));
 
 export default function Home({ name }) {
   const HomeCards = homecards.data;
