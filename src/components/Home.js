@@ -1,11 +1,12 @@
 import { Col, Container, Row } from "react-bootstrap";
 
-import React from "react";
+import HomeAbout from "./HomeAbout"
 // import Navigation from "./Navigation";
+import React from "react";
 import homecards from "../data/homecards.json";
 import loadable from "@loadable/component";
 
-const HomeAbout = loadable(() => import("./HomeAbout"));
+// const HomeAbout = loadable(() => import("./HomeAbout"));
 const Navigation = loadable(() => import("./Navigation"));
 const HomeCard = loadable(() => import("./HomeCard"));
 const Left = loadable(() => import("./Left"));

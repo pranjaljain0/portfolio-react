@@ -3,7 +3,10 @@ import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
 import React, { useState } from "react";
 
 import { ReactComponent as PortfolioLogo } from "../assets/Image/logo.svg";
-import ResumeModal from "./ResumeModal";
+import loadable from "@loadable/component";
+
+const ResumeModal = loadable(() => import("./ResumeModal"));
+// import ResumeModal from "./ResumeModal";
 
 function Navigation() {
   const [showResumeModal, setShowResumeModal] = useState(false);
