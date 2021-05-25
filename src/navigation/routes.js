@@ -1,6 +1,7 @@
-import Home from "../components/Home";
-import Project from "../pages/Project";
-import ProjectList from "../pages/ProjectList";
+import loadable from "@loadable/component";
+const Home = loadable(() => import("../components/Home"));
+const Project = loadable(() => import("../pages/Project"));
+const ProjectList = loadable(() => import("../pages/ProjectList"));
 
 const routes = [
   {
