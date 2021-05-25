@@ -1,0 +1,10 @@
+{
+  "name": "Pranjal Jain Portfolio",
+  "short_name": "Pranjal Jain",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "browser",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/"
+}
