@@ -42,7 +42,7 @@ function Navigation() {
                   borderRadius: "0 4px 4px 0",
                 }}
               >
-                <FaDownload fill="rgba(0,0,0,0.5)" />
+                <FaDownload fill="rgba(0,0,0,0.5)" onClick={() => window.location = "https://github.com/pranjaljain0/pranjaljain0/raw/master/Pranjal_Jain_CV.pdf"} />
               </Button>
             </Nav.Link>
             <Nav.Link href="https://github.com/pranjaljain0">
