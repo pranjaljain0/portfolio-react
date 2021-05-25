@@ -221,13 +221,29 @@
           "title": "HUDE Labs",
           "description": "Website Development",
           "duration": "3 Months",
-          "location": "Bhopal, Madhya Pradesh 462024, IN"
+          "location": "Bhopal, Madhya Pradesh 462024, IN",
+          "url": "http://hudelabs.com/"
         },
         {
           "title": "Emote Electric",
           "description": "Website Development, Android and iOS App Development, Hosting Solutions, SEO and Hardware Interfacing",
           "duration": "3 Months",
-          "location": "Coimbatore, Tamil Nadu 641032, IN"
+          "location": "Coimbatore, Tamil Nadu 641032, IN",
+          "url": "https://emoteelectric.com/"
+        },
+        {
+          "title": "Semantic Technologies",
+          "description": "Worked on the MyBenefits360 which is a comprehensive and powerful online portal that automates, manages and supports Core Insurance, Wellness Benefits and Fitness Integrations",
+          "duration": "6 Months",
+          "location": "Remote",
+          "url": "https://www.mybenefits360.com/"
+        },
+        {
+          "title": "CollegePass",
+          "description": "Website Development, Android and iOS App Development, Hosting Solutions & SEO",
+          "duration": "6 Months",
+          "location": "Remote",
+          "url": "https://collegepass.org/"
         }
       ],
       "route": "#",
