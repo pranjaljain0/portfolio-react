@@ -7,8 +7,8 @@ name: Deploy to Vercel (production)
 on:
   push:
     branches:
-      - "master"
-      - "lighthouse-integration"
+      - 'master'
+      - 'lighthouse-integration'
 
 jobs:
   # Configures the deployment environment, install dependencies (like node, npm, etc.) that are requirements for the upcoming jobs
@@ -37,7 +37,7 @@ jobs:
       - uses: amondnet/vercel-action@v19
         with:
           vercel-token: ${{ secrets.ZEIT_TOKEN }} # Required
-          vercel-args: "--prod" #Optional
+          vercel-args: '--prod' #Optional
           vercel-org-id: ${{ secrets.ORG_ID}} #Required
           vercel-project-id: ${{ secrets.PROJECT_ID}} #Required
 
@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-18.04
     needs: start-production-deployment
     env:
-      ACTIONS_ALLOW_UNSECURE_COMMANDS: "true"
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
     steps:
       - uses: actions/checkout@v1 # Get last commit pushed - XXX See https://github.com/actions/checkout
       - name: Resolving deployment url from Zeit
@@ -71,7 +71,7 @@ jobs:
       - name: Run Lighthouse
         uses: foo-software/lighthouse-check-action@v1.0.14
         env:
-          ACTIONS_ALLOW_UNSECURE_COMMANDS: "true"
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         id: lighthouseCheck
         with:
           outputDirectory: /tmp/lighthouse-artifacts # Used to upload artifacts.
@@ -92,8 +92,8 @@ jobs:
         uses: foo-software/lighthouse-check-status-action@v1.0.1
         with:
           lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
-          minAccessibilityScore: "50"
-          minBestPracticesScore: "50"
-          minPerformanceScore: "30"
-          minProgressiveWebAppScore: "50"
-          minSeoScore: "50"
+          minAccessibilityScore: '50'
+          minBestPracticesScore: '50'
+          minPerformanceScore: '30'
+          minProgressiveWebAppScore: '50'
+          minSeoScore: '50'

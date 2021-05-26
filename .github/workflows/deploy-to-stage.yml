@@ -7,7 +7,7 @@ name: Deploy to Vercel (staging)
 on:
   push:
     branches-ignore:
-      - "master"
+      - 'master'
 
 jobs:
   # Configures the deployment environment, install dependencies (like node, npm, etc.) that are requirements for the upcoming jobs
@@ -27,7 +27,7 @@ jobs:
     name: Starts Vercel deployment (Staging) (Ubuntu 18.04)
     runs-on: ubuntu-18.04
     env:
-      ACTIONS_ALLOW_UNSECURE_COMMANDS: "true"
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
     needs: setup-environment
     steps:
       - uses: actions/checkout@v2

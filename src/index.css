@@ -1,360 +1,360 @@
 @font-face {
-  font-family: Avenir;
-  font-display: swap;
-  unicode-range: U+000-5FF; /* Download only latin glyphs */
-  src: url(./assets/fonts/Avenir.otf);
+	font-family: Avenir;
+	font-display: swap;
+	unicode-range: U+000-5FF; /* Download only latin glyphs */
+	src: url(./assets/fonts/Avenir.otf);
 }
 
 @font-face {
-  font-family: AvenirBold;
-  font-display: swap;
-  unicode-range: U+000-5FF; /* Download only latin glyphs */
-  src: url(./assets/fonts/AvenirBold.otf);
+	font-family: AvenirBold;
+	font-display: swap;
+	unicode-range: U+000-5FF; /* Download only latin glyphs */
+	src: url(./assets/fonts/AvenirBold.otf);
 }
 
 @font-face {
-  font-family: GoogleSans;
-  font-display: swap;
-  font-style: normal;
-  unicode-range: U+000-5FF; /* Download only latin glyphs */
-  src: url("./assets/fonts/Google sans/GoogleSans.woff2") format("woff2"); /* Super Modern Browsers */
+	font-family: GoogleSans;
+	font-display: swap;
+	font-style: normal;
+	unicode-range: U+000-5FF; /* Download only latin glyphs */
+	src: url('./assets/fonts/Google sans/GoogleSans.woff2') format('woff2'); /* Super Modern Browsers */
 }
 
 * {
-  box-sizing: border-box;
-  font-family: "GoogleSans", "Gill Sans", "Gill Sans MT", Calibri,
-    "Trebuchet MS", sans-serif;
+	box-sizing: border-box;
+	font-family: 'GoogleSans', 'Gill Sans', 'Gill Sans MT', Calibri,
+		'Trebuchet MS', sans-serif;
 }
 
 html,
 body,
 #app,
 #app > div {
-  height: 100%;
-  overflow-x: hidden;
+	height: 100%;
+	overflow-x: hidden;
 }
 
 .nvabar-custon {
-  background: linear-gradient(120deg, #00e4d0, #5983e8);
+	background: linear-gradient(120deg, #00e4d0, #5983e8);
 }
 
 .mainRow {
-  height: 100%;
+	height: 100%;
 }
 
 .innerContainer {
-  position: absolute;
-  bottom: 0;
-  height: 100%;
-  padding-top: 55px;
+	position: absolute;
+	bottom: 0;
+	height: 100%;
+	padding-top: 55px;
 }
 
 .LeftSec {
-  background-color: #1d1d1d;
-  background: linear-gradient(0deg, #1d1d1d, rgb(19, 19, 19));
-  color: #fff;
-  z-index: 999;
+	background-color: #1d1d1d;
+	background: linear-gradient(0deg, #1d1d1d, rgb(19, 19, 19));
+	color: #fff;
+	z-index: 999;
 }
 
 .navbar_logo_container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .navbar_logo_container span {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.8em;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.8em;
 }
 
 .navbar_logo_container:hover {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .moving-gradient {
-  color: #fff;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  outline: none;
-  border: 2px solid #fff;
-  -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
-  width: 100% !important;
+	color: #fff;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	outline: none;
+	border: 2px solid #fff;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+	width: 100% !important;
 }
 
 @media only screen and (max-width: 768px) {
-  .moving-gradient button {
-    width: 100vw !important;
-  }
+	.moving-gradient button {
+		width: 100vw !important;
+	}
 }
 
 @-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @-moz-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+	.navbar-expand-lg .navbar-nav {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .navbar_logo {
-  height: 50px;
-  margin: 0;
-  padding: 0;
-  margin-right: 10px;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	margin-right: 10px;
 }
 
 .cols {
-  margin: 0 !important;
-  padding: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 .RightSec {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 !important;
-  padding: 0 !important;
+	height: 100%;
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 .RightUpperSec {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 !important;
-  padding: 0 !important;
-  font-size: 16px;
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 !important;
+	padding: 0 !important;
+	font-size: 16px;
 }
 
 .RightLowerSec {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 !important;
-  padding: 0 !important;
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 .ColStyle {
-  background: linear-gradient(0deg, #434343, #000);
-  color: #fff;
-  margin: 0 !important;
-  padding: 0 !important;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
+	background: linear-gradient(0deg, #434343, #000);
+	color: #fff;
+	margin: 0 !important;
+	padding: 0 !important;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
 }
 
 .innerColImg {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  transition: all 0.2s;
-  padding: 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	transition: all 0.2s;
+	padding: 20px;
 }
 
 .innerColImg:hover {
-  transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 .innerCol {
-  text-align: center;
-  flex: 1;
-  overflow: hidden;
-  height: 200px;
+	text-align: center;
+	flex: 1;
+	overflow: hidden;
+	height: 200px;
 }
 
 .innerImage {
-  align-self: center;
-  width: 100%;
+	align-self: center;
+	width: 100%;
 }
 
 .particlejs {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .preTitle {
-  font-size: 180%;
+	font-size: 180%;
 }
 
 .name_big {
-  background: -webkit-linear-gradient(45deg, hsl(243, 100%, 59%), #00ff95 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
-  font-size: 250%;
-  display: inline;
+	background: -webkit-linear-gradient(45deg, hsl(243, 100%, 59%), #00ff95 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 700;
+	font-size: 250%;
+	display: inline;
 }
 
 .leftText {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  margin: 0px 40px;
-  font-size: 140%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	margin: 0px 40px;
+	font-size: 140%;
 }
 
 .flex-fix {
-  display: block;
-  flex-direction: row;
+	display: block;
+	flex-direction: row;
 }
 
 a.projectLink {
-  text-decoration: none !important;
-  cursor: pointer;
+	text-decoration: none !important;
+	cursor: pointer;
 }
 
 .animated_text {
-  font-size: 140%;
-  font-weight: bold;
+	font-size: 140%;
+	font-weight: bold;
 }
 
 .projectTitle {
-  font-size: 120%;
-  color: #fff;
-  margin: 20px 0px;
+	font-size: 120%;
+	color: #fff;
+	margin: 20px 0px;
 }
 
 .RightUpperSecContent {
-  margin: auto;
-  padding: 1rem;
+	margin: auto;
+	padding: 1rem;
 }
 
 .RightUpperSecContent h2 {
-  background: -webkit-linear-gradient(45deg, hsl(243, 100%, 59%), #00ff95 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
-  font-size: 300%;
-  display: inline;
+	background: -webkit-linear-gradient(45deg, hsl(243, 100%, 59%), #00ff95 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 700;
+	font-size: 300%;
+	display: inline;
 }
 
 .RightUpperSecContent p {
-  margin: 0px 0px;
+	margin: 0px 0px;
 }
 
 .projectValue {
-  font-size: 180%;
-  font-weight: bold;
-  color: #fff;
-  margin: auto 0;
-  font-family: AvenirBold;
+	font-size: 180%;
+	font-weight: bold;
+	color: #fff;
+	margin: auto 0;
+	font-family: AvenirBold;
 }
 
 .iconHolder {
-  display: flex;
+	display: flex;
 }
 
 .iconHolder svg {
-  flex: 1;
+	flex: 1;
 }
 
 .modal-content {
-  border-radius: 11px !important;
+	border-radius: 11px !important;
 }
 
 .project_list_item_link {
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
 }
 
 .project_list_item_link:focus,
 .project_list_item_link:hover {
-  text-decoration: none;
-  color: #fff;
+	text-decoration: none;
+	color: #fff;
 }
 
 .project_list_item {
-  width: 100%;
-  padding: 20px;
-  border-radius: 11px;
-  background-color: #00e4d0;
-  margin: 10px 0px;
+	width: 100%;
+	padding: 20px;
+	border-radius: 11px;
+	background-color: #00e4d0;
+	margin: 10px 0px;
 }
 
 .project_list_item a {
-  text-decoration: none;
-  color: #fff;
+	text-decoration: none;
+	color: #fff;
 }
 
 .project_list_item .badge {
-  margin: 4px 6px 4px 0px;
-  font-size: 0.8em;
-  padding: 6px 12px;
+	margin: 4px 6px 4px 0px;
+	font-size: 0.8em;
+	padding: 6px 12px;
 }
 
 .VerticalTimeline::before {
-  background-image: linear-gradient(0deg, red, yellow) !important;
+	background-image: linear-gradient(0deg, red, yellow) !important;
 }
 
 .ButtonGroup {
-  margin: 20px 0;
+	margin: 20px 0;
 }
 
 @media only screen and (max-width: 1190px) {
-  /* For tab: */
+	/* For tab: */
 
-  .LeftSec {
-    height: 100vh;
-  }
+	.LeftSec {
+		height: 100vh;
+	}
 }
 
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
+	/* For mobile phones: */
 
-  .LeftSec {
-    height: 100vh;
-  }
+	.LeftSec {
+		height: 100vh;
+	}
 }
