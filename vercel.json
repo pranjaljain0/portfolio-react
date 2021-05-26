@@ -1,11 +1,17 @@
 {
+	"redirects": [
+		{"source": "/redCheck", "destination": "https://github.com/pranjaljain0"}
+	],
+	"github": {
+		"enabled": false
+	},
 	"headers": [
 		{
 			"source": "/(.*)",
 			"headers": [
 				{
 					"key": "Cache-Control",
-					"value": "public, max-age=31536000, immutable"
+					"value": "public, max-age=31556952, immutable"
 				}
 			]
 		}
