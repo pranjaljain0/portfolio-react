@@ -1,8 +1,8 @@
+import { Badge } from 'react-bootstrap'
 import React from 'react'
-import {Badge} from 'react-bootstrap'
-import {useHistory} from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
-function ProjectList({ProjectListVal}) {
+function ProjectList({ ProjectListVal }) {
 	const history = useHistory()
 
 	return (
@@ -26,7 +26,7 @@ function ProjectList({ProjectListVal}) {
 								className='project_list_item'>
 								{Object.keys(Obj.badgeTitle).map((item, index) => {
 									return (
-										<Badge pill variant='primary' className='chip'>
+										<Badge pill variant='primary' className='chip' key={index}>
 											{Obj.badgeTitle[item]}
 										</Badge>
 									)

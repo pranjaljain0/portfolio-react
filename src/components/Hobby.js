@@ -1,13 +1,13 @@
-import React from 'react'
-import styled from 'styled-components'
-
 import {
-	FaPuzzlePiece,
 	FaDumbbell,
 	FaGuitar,
 	FaNetworkWired,
+	FaPuzzlePiece,
 } from 'react-icons/fa'
-import {MdComputer, MdCardTravel} from 'react-icons/md'
+import { MdCardTravel, MdComputer } from 'react-icons/md'
+
+import React from 'react'
+import styled from 'styled-components'
 
 function hobbyIconCheck(iconName, size) {
 	if (iconName === 'FaPuzzlePiece')
@@ -49,13 +49,13 @@ const HobbyIcon = styled.div`
 	margin-left: 10px;
 `
 
-function Hobby({HobbyListVal}) {
+function Hobby({ HobbyListVal }) {
 	return (
 		<Card>
 			<Table>
 				{HobbyListVal.map((Obj, index) => {
 					return (
-						<TR index={index}>
+						<TR index={index} key={index}>
 							<HobbyIcon className='hobbyIcon'>
 								{hobbyIconCheck(Obj.hobbyIcon, '30px')}
 							</HobbyIcon>

@@ -22,14 +22,14 @@ const TD = styled.td`
 	padding: 20px;
 `
 
-function CodeList({CodeListVal}) {
+function CodeList({ CodeListVal }) {
 	return (
 		<Card>
 			<Table>
 				{CodeListVal.map((Obj, index) => {
 					return (
-						<div>
-							<TR index={index}>
+						<div key={index}>
+							<TR index={index} >
 								<TD>{Obj.title}</TD>
 								<TD>{Obj.level}</TD>
 							</TR>
