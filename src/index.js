@@ -1,4 +1,7 @@
-import "./index.css";
+import
+  /* webpackChunkName: "indexCSS" */
+  /* webpackMode: "lazy" */
+  "./index.css";
 
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 

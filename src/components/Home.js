@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 
 import HomeAbout from "./HomeAbout"
+import Left from "./Left"
 // import Navigation from "./Navigation";
 import React from "react";
 import homecards from "../data/homecards.json";
@@ -9,7 +10,7 @@ import loadable from "@loadable/component";
 // const HomeAbout = loadable(() => import("./HomeAbout"));
 const Navigation = loadable(() => import("./Navigation"));
 const HomeCard = loadable(() => import("./HomeCard"));
-const Left = loadable(() => import("./Left"));
+// const Left = loadable(() => import("./Left"));
 
 export default function Home({ name }) {
   const HomeCards = homecards.data;
