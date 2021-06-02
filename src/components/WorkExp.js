@@ -1,6 +1,6 @@
 import React from 'react'
 
-function WorkExp({ WorkExpObj }) {
+function WorkExp({WorkExpObj}) {
 	return (
 		<div>
 			{WorkExpObj.map((Obj, index) => {

@@ -1,8 +1,8 @@
-import { Badge } from 'react-bootstrap'
+import {Badge} from 'react-bootstrap'
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 
-function ProjectList({ ProjectListVal }) {
+function ProjectList({ProjectListVal}) {
 	const history = useHistory()
 
 	return (

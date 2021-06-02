@@ -1,5 +1,5 @@
-import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai'
-import { Button, Container, FormControl, InputGroup } from 'react-bootstrap'
+import {AiOutlineGithub, AiOutlineLinkedin} from 'react-icons/ai'
+import {Button, Container, FormControl, InputGroup} from 'react-bootstrap'
 
 import React from 'react'
 import styled from 'styled-components'

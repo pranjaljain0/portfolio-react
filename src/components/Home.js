@@ -1,4 +1,4 @@
-import { Col, Container, Row } from 'react-bootstrap'
+import {Col, Container, Row} from 'react-bootstrap'
 
 import HomeAbout from './HomeAbout'
 import Left from './Left'

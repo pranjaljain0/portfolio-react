@@ -4,7 +4,7 @@ import {
 	FaNetworkWired,
 	FaPuzzlePiece,
 } from 'react-icons/fa'
-import { MdCardTravel, MdComputer } from 'react-icons/md'
+import {MdCardTravel, MdComputer} from 'react-icons/md'
 
 import React from 'react'
 import styled from 'styled-components'
@@ -49,7 +49,7 @@ const HobbyIcon = styled.div`
 	margin-left: 10px;
 `
 
-function Hobby({ HobbyListVal }) {
+function Hobby({HobbyListVal}) {
 	return (
 		<Card>
 			<Table>

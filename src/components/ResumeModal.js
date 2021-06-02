@@ -1,7 +1,7 @@
-import { Modal } from 'react-bootstrap'
+import {Modal} from 'react-bootstrap'
 import React from 'react'
 
-function ResumeModal({ showResumeModal, closeModal }) {
+function ResumeModal({showResumeModal, closeModal}) {
 	return (
 		<Modal
 			size='lg'
