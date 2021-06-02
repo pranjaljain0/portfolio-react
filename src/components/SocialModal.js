@@ -1,7 +1,8 @@
+import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai'
+import { Button, Container, FormControl, InputGroup } from 'react-bootstrap'
+
 import React from 'react'
 import styled from 'styled-components'
-import {AiOutlineGithub, AiOutlineLinkedin} from 'react-icons/ai'
-import {InputGroup, FormControl, Button, Container} from 'react-bootstrap'
 
 const Social = styled.div`
 	display: flex;
@@ -56,7 +57,7 @@ const ButtonForm = styled.div`
 	margin-top: 15px;
 `
 
-function SocialModal({SocialModalObj}) {
+function SocialModal() {
 	return (
 		<Social>
 			<Container>

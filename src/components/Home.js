@@ -1,4 +1,4 @@
-import {Col, Container, Row} from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 
 import HomeAbout from './HomeAbout'
 import Left from './Left'
@@ -12,7 +12,7 @@ const Navigation = loadable(() => import('./Navigation'))
 const HomeCard = loadable(() => import('./HomeCard'))
 // const Left = loadable(() => import("./Left"));
 
-export default function Home({name}) {
+export default function Home() {
 	const HomeCards = homecards.data
 
 	return (
