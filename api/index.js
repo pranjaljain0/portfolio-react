@@ -1,7 +1,4 @@
 module.exports = (req, res) => {
-    const {
-        query: { name },
-    } = req
-
-    res.send(`Hello ${name}!`)
+    const { name = 'World' } = req.query
+    res.status(200).send(`Hello ${name}!`)
 }
