@@ -15,7 +15,7 @@
 		"react-dom": "^16.14.0",
 		"react-icons": "^3.11.0",
 		"react-router-dom": "^5.2.0",
-		"react-scripts": "^4.0.3",
+		"react-scripts": "^1.1.5",
 		"react-tsparticles": "^1.28.0",
 		"react-typed": "^1.2.0",
 		"react-typing-animation": "^1.6.2",

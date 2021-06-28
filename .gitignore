@@ -25,7 +25,7 @@ rootCA.pem
 rootCA.srl
 server.crt
 server.csr
-server.csr.conf
+server.csr.cnf
 server.key
 v3.ext
 

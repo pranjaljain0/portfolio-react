@@ -1,12 +1,12 @@
-import React, {useState} from 'react'
-import {Col} from 'react-bootstrap'
-import {GiBookshelf, GiThorHammer} from 'react-icons/gi'
-import {FaGuitar} from 'react-icons/fa'
-import {DiJavascript1} from 'react-icons/di'
-import {GoRepo} from 'react-icons/go'
-import {TiSocialAtCircular} from 'react-icons/ti'
+import { GiBookshelf, GiThorHammer } from 'react-icons/gi'
+import React, { useState } from 'react'
 
+import { Col } from 'react-bootstrap'
+import { DiJavascript1 } from 'react-icons/di'
+import { FaGuitar } from 'react-icons/fa'
+import { GoRepo } from 'react-icons/go'
 import HomeModal from './HomeModal'
+import { TiSocialAtCircular } from 'react-icons/ti'
 
 function seticon(iconName, size) {
 	if (iconName === 'FaGuitar') return <FaGuitar color='#fff' size={size} />
@@ -21,11 +21,11 @@ function seticon(iconName, size) {
 		return <TiSocialAtCircular color='#fff' size={size} />
 }
 
-function HomeCard({HomeCards}) {
+function HomeCard({ HomeCards }) {
 	const [lgShow, setLgShow] = useState(false)
 
 	return (
-		<>
+		<React.Fragment>
 			<Col className='ColStyle' xs={6} md={4}>
 				<div className='innerCol'>
 					<span onClick={() => setLgShow(true)} className='projectLink'>
@@ -48,7 +48,7 @@ function HomeCard({HomeCards}) {
 				</div>
 			</Col>
 			<HomeModal lgShow={lgShow} setLgShow={setLgShow} HomeCards={HomeCards} />
-		</>
+		</React.Fragment>
 	)
 }
 
