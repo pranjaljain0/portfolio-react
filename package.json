@@ -48,9 +48,9 @@
 		"@typescript-eslint/eslint-plugin": "^4.26.1",
 		"@typescript-eslint/parser": "^4.26.1",
 		"canvas": "^2.6.1",
-		"eslint": "^7.28.0",
+		"eslint": "^7.29.0",
 		"eslint-plugin-react": "^7.24.0",
-		"prettier": "^2.3.1",
+		"prettier": "^2.3.2",
 		"webpack-bundle-analyzer": "^4.4.2"
 	}
 }
