@@ -20,14 +20,14 @@
 .env.production.local
 
 # Certificates
-rootCA.key
-rootCA.pem
-rootCA.srl
-server.crt
-server.csr
-server.csr.conf
-server.key
-v3.ext
+./rootCA.key
+./rootCA.pem
+./rootCA.srl
+./server.crt
+./server.csr
+./server.csr.conf
+./server.key
+./v3.ext
 
 npm-debug.log*
 yarn-debug.log*
