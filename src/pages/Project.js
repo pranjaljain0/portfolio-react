@@ -1,4 +1,4 @@
-import { Col, Container, Row } from 'react-bootstrap'
+import {Col, Container, Row} from 'react-bootstrap'
 
 import Navigation from '../components/Navigation'
 import React from 'react'
@@ -16,7 +16,7 @@ function Project(props) {
 		<React.Fragment>
 			<Navigation />
 			<Container className='innerContainer' fluid>
-				<Row style={{ marginTop: 30 }}>
+				<Row style={{marginTop: 30}}>
 					<Col>
 						{Object.entries(projectData).map(([key, value], index) => {
 							return (

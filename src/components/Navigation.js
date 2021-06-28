@@ -1,6 +1,6 @@
-import { Button, Nav, Navbar } from 'react-bootstrap'
-import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa'
-import React, { useState } from 'react'
+import {Button, Nav, Navbar} from 'react-bootstrap'
+import {FaDownload, FaGithub, FaLinkedin} from 'react-icons/fa'
+import React, {useState} from 'react'
 
 import PortfolioLogo from '../assets/Image/logo.svg'
 import loadable from '@loadable/component'
@@ -15,7 +15,7 @@ function Navigation() {
 		<React.Fragment>
 			<Navbar variant='dark' expand='lg' fixed='top' className='nvabar-custon'>
 				<a href='/' className='navbar_logo_container'>
-					<img src={PortfolioLogo} className='navbar_logo' alt="navbar_logo" />
+					<img src={PortfolioLogo} className='navbar_logo' alt='navbar_logo' />
 					<span>Pranjal Jain</span>
 				</a>
 				<Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -48,8 +48,8 @@ function Navigation() {
 									aria-label='Resume'
 									fill='rgba(0,0,0,0.5)'
 									onClick={() =>
-									(window.location =
-										'https://github.com/pranjaljain0/pranjaljain0/raw/master/Pranjal_Jain_CV.pdf')
+										(window.location =
+											'https://github.com/pranjaljain0/pranjaljain0/raw/master/Pranjal_Jain_CV.pdf')
 									}
 								/>
 							</Button>
