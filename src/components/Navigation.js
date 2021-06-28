@@ -15,7 +15,7 @@ function Navigation() {
 		<React.Fragment>
 			<Navbar variant='dark' expand='lg' fixed='top' className='nvabar-custon'>
 				<a href='/' className='navbar_logo_container'>
-					<img src={PortfolioLogo} className='navbar_logo' />
+					<img src={PortfolioLogo} className='navbar_logo' alt="navbar_logo" />
 					<span>Pranjal Jain</span>
 				</a>
 				<Navbar.Toggle aria-controls='basic-navbar-nav' />
