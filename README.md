@@ -8,7 +8,7 @@ Website [pranjaljain.me](https://www.pranjaljain.me)
 
 # Portfolio website
 
-A portfolio website created using React.js published on Vercel.
+A portfolio website created using React.js hosted on Vercel.
 
 ## Pages:
 
