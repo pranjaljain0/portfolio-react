@@ -16,3 +16,7 @@ A portfolio website created using React.js published on Vercel.
 2. Contact-Us
 3. About-Us
 4. Projects
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/pranjaljain0/portfolio-react.svg)](https://starchart.cc/pranjaljain0/portfolio-react)
