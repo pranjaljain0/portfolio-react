@@ -6,7 +6,6 @@
 		"@loadable/component": "^5.14.1",
 		"@testing-library/jest-dom": "^4.2.4",
 		"@testing-library/user-event": "^7.1.2",
-		"ackee-tracker": "^5.1.0",
 		"bootstrap": "^4.6.0",
 		"gitmoji-cli": "^4.0.0",
 		"lint-staged": "^11.0.0",
@@ -19,7 +18,8 @@
 		"react-tsparticles": "^1.28.0",
 		"react-typed": "^1.2.0",
 		"react-vertical-timeline-component": "^2.6.0",
-		"styled-components": "^5.2.0"
+		"styled-components": "^5.2.0",
+		"use-ackee": "^3.0.0"
 	},
 	"scripts": {
 		"start": "react-scripts start",
