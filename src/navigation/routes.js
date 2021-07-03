@@ -1,4 +1,5 @@
 import loadable from '@loadable/component'
+
 const Home = loadable(() =>
 	import(
 		/* webpackChunkName: "home" */
