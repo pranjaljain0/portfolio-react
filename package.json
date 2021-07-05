@@ -4,6 +4,8 @@
 	"private": true,
 	"dependencies": {
 		"@loadable/component": "^5.14.1",
+		"@sentry/react": "^6.8.0",
+		"@sentry/tracing": "^6.8.0",
 		"@testing-library/jest-dom": "^4.2.4",
 		"@testing-library/user-event": "^7.1.2",
 		"bootstrap": "^4.6.0",
