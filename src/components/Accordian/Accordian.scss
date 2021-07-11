@@ -1,0 +1,48 @@
+.portfolio-accordian {
+	& h3 {
+		margin: 0;
+		padding: 0;
+	}
+
+	display: flex;
+	background-color: rgba($color: #000000, $alpha: 0.7);
+	color: #fff;
+	flex-direction: column;
+	margin: 10px 0;
+	padding: 10px;
+	border-radius: 8px;
+
+	& .header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		& .dropdown-icon {
+			background-color: #000000;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 8px;
+			border-radius: 50% 50%;
+		}
+
+		& .title {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			& span {
+				margin-left: 8px;
+				color: rgba($color: #000000, $alpha: 0.6);
+			}
+
+			& a {
+				margin-left: 8px;
+			}
+		}
+	}
+
+	& .content {
+		display: flex;
+	}
+}

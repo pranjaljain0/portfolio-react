@@ -237,28 +237,38 @@
 			"value": [
 				{
 					"title": "HUDE Labs",
-					"description": "Website Development",
 					"duration": "3 Months",
 					"location": "Bhopal, Madhya Pradesh 462024, IN",
-					"url": "http://hudelabs.com/"
+					"url": "http://hudelabs.com/",
+					"description": [
+						"Learned and implemented the concept of Block Element Modifier in HTML & CSS."
+					]
 				},
 				{
 					"title": "Emote Electric",
-					"description": "Website Development, Android and iOS App Development, Hosting Solutions, SEO and Hardware Interfacing",
+					"description": [
+						"Developed and designed an interactive Website for Emote Electric, using HTML, CSS & PHP.",
+						"Created AWS EC2 Instance to host the website on the AWS Cloud."
+					],
 					"duration": "3 Months",
 					"location": "Coimbatore, Tamil Nadu 641032, IN",
 					"url": "https://emoteelectric.com/"
 				},
 				{
 					"title": "Semantic Technologies",
-					"description": "Worked on the MyBenefits360 which is a comprehensive and powerful online portal that automates, manages and supports Core Insurance, Wellness Benefits and Fitness Integrations",
+					"description": [
+						"Worked on the MyBenefits360 which is a comprehensive and powerful online portal that automates, manages and supports Core Insurance, Wellness Benefits and Fitness Integrations"
+					],
 					"duration": "6 Months",
 					"location": "Remote",
 					"url": "https://www.mybenefits360.com/"
 				},
 				{
 					"title": "CollegePass",
-					"description": "Website Development, Android and iOS App Development, Hosting Solutions & SEO",
+					"description": [
+						"Developed and designed an interactive advising platform for college admission, using React.js, Node.js & AWS.",
+						"Deployed service workers to perform browser operations on the PWA."
+					],
 					"duration": "6 Months",
 					"location": "Remote",
 					"url": "https://collegepass.org/"
