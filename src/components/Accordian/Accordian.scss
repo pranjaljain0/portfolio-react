@@ -33,7 +33,7 @@
 
 			& span {
 				margin-left: 8px;
-				color: rgba($color: #000000, $alpha: 0.6);
+				color: rgba($color: #fff, $alpha: 0.6);
 			}
 
 			& a {
@@ -44,5 +44,8 @@
 
 	& .content {
 		display: flex;
+		border-top: 1px solid #fff;
+		margin-top: 10px;
+		padding-top: 10px;
 	}
 }

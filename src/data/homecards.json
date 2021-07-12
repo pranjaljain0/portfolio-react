@@ -14,24 +14,6 @@
 				},
 				{
 					"id": 2,
-					"title": "Integrated Autonomous guided wheelchair",
-					"projectRoute": "/project/1",
-					"badgeTitle": ["Integerated project"],
-					"initialColor": "#56CCF2",
-					"finalColor": "#2F80ED",
-					"language": "C++"
-				},
-				{
-					"id": 3,
-					"title": "Integrated Autonomous guided wheelchair",
-					"projectRoute": "/project/1",
-					"badgeTitle": ["Integerated project"],
-					"initialColor": "#56CCF2",
-					"finalColor": "#2F80ED",
-					"language": "C++"
-				},
-				{
-					"id": 4,
 					"title": "Multi terrain vehicle",
 					"projectRoute": "#",
 					"badgeTitle": ["Integerated project"],
@@ -40,7 +22,7 @@
 					"language": "Java"
 				},
 				{
-					"id": 5,
+					"id": 3,
 					"title": "KOSK",
 					"projectRoute": "#",
 					"badgeTitle": ["Mobile", "Web"],
@@ -49,7 +31,7 @@
 					"language": "JavaScript"
 				},
 				{
-					"id": 6,
+					"id": 4,
 					"title": "Edudroid",
 					"projectRoute": "#",
 					"badgeTitle": ["Desktop"],
@@ -58,7 +40,7 @@
 					"language": "Haskell"
 				},
 				{
-					"id": 7,
+					"id": 5,
 					"title": "Smart Grid",
 					"projectRoute": "#",
 					"badgeTitle": ["Internet of things"],
