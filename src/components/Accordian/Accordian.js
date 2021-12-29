@@ -6,7 +6,7 @@ import React, {useState} from 'react'
 import {AiOutlineLink} from 'react-icons/ai'
 
 function Accordian({title, data}) {
-	const [showAccordian, setShowAccordian] = useState(false)
+	const [showAccordian, setShowAccordian] = useState(true)
 	return (
 		<div className='portfolio-accordian'>
 			<div className='header'>

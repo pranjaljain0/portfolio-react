@@ -6,7 +6,11 @@ function ProjectList({ProjectListVal}) {
 	return (
 		<div>
 			{ProjectListVal &&
-				ProjectListVal.map((Obj, index) => {
+				ProjectListVal.sort((a, b) => {
+					if (a.title > b.title) return 1
+					if (a.title < b.title) return -1
+					return 0
+				}).map((Obj, index) => {
 					return (
 						<a
 							href={Obj.projectRoute}
