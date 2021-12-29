@@ -40,6 +40,7 @@ body,
 
 .mainRow {
 	height: 100%;
+	display: flex;
 }
 
 .innerContainer {
@@ -54,6 +55,7 @@ body,
 	background: linear-gradient(0deg, #1d1d1d, rgb(19, 19, 19));
 	color: #fff;
 	z-index: 999;
+	max-width: 100%;
 }
 
 .navbar_logo_container {
@@ -218,7 +220,7 @@ body,
 	top: 0;
 	bottom: 0;
 	left: 0;
-	right: 0;
+	width: 50%;
 }
 
 .preTitle {
@@ -327,6 +329,11 @@ a.projectLink {
 .project_list_item a {
 	text-decoration: none;
 	color: #fff;
+}
+
+.projectGithubIcon {
+	font-size: 1.8rem;
+	margin-left: 10px;
 }
 
 .project_list_item .badge {

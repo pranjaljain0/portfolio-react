@@ -1,19 +1,17 @@
+import {AiFillGithub} from 'react-icons/ai'
 import {Badge} from 'react-bootstrap'
 import React from 'react'
-import {useHistory} from 'react-router-dom'
 
 function ProjectList({ProjectListVal}) {
-	const history = useHistory()
-
 	return (
 		<div>
 			{ProjectListVal &&
 				ProjectListVal.map((Obj, index) => {
 					return (
-						<span
+						<a
+							href={Obj.projectRoute}
 							key={`project-list-item-${index}`}
-							className='project_list_item_link'
-							onClick={() => Obj.id && history.push(`/project/${Obj.id}`)}>
+							className='project_list_item_link'>
 							<div
 								style={{
 									background:
@@ -24,6 +22,14 @@ function ProjectList({ProjectListVal}) {
 										`)`,
 								}}
 								className='project_list_item'>
+								<h3>
+									{Obj.title}
+									{Obj.githubUrl && (
+										<a href={Obj.githubUrl}>
+											<AiFillGithub className='projectGithubIcon' />
+										</a>
+									)}
+								</h3>
 								{Object.keys(Obj.badgeTitle).map((item, index) => {
 									return (
 										<Badge pill variant='primary' className='chip' key={index}>
@@ -31,12 +37,9 @@ function ProjectList({ProjectListVal}) {
 										</Badge>
 									)
 								})}
-								<Badge pill variant='secondary' className='chip'>
-									{Obj.language}
-								</Badge>
-								<p>{Obj.title}</p>
+								<p>{Obj.description}</p>
 							</div>
-						</span>
+						</a>
 					)
 				})}
 		</div>
