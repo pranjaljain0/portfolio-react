@@ -11,7 +11,7 @@
 		"bootstrap": "^4.6.0",
 		"gitmoji-cli": "^4.0.0",
 		"lint-staged": "^11.0.0",
-		"node-sass": "^4.14.1",
+		"node-sass": "^7.0.0",
 		"react": "^16.14.0",
 		"react-bootstrap": "^1.6.1",
 		"react-dom": "^16.14.0",
