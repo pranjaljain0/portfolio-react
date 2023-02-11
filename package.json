@@ -9,7 +9,7 @@
 		"@testing-library/jest-dom": "^4.2.4",
 		"@testing-library/user-event": "^7.1.2",
 		"bootstrap": "^4.6.0",
-		"gitmoji-cli": "^4.0.0",
+		"gitmoji-cli": "^7.1.0",
 		"lint-staged": "^11.0.0",
 		"node-sass": "^4.14.1",
 		"react": "^16.14.0",
