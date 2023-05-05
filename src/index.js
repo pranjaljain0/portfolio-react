@@ -3,18 +3,13 @@ import './index.css'
 import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 
 import App from './App'
-import {BrowserRouter} from 'react-router-dom'
 import React from 'react'
-import {hydrate} from 'react-dom'
+import ReactDOM from 'react-dom/client'
 
-hydrate(
-	<BrowserRouter>
+ReactDOM.createRoot(document.getElementById('root')).render(
+	<React.StrictMode>
 		<App />
-	</BrowserRouter>,
-	document.getElementById('root')
-)
+	</React.StrictMode>
+);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorkerRegistration.register()

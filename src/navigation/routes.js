@@ -1,5 +1,5 @@
+import React from 'react'
 import loadable from '@loadable/component'
-
 const Home = loadable(() =>
 	import(
 		/* webpackChunkName: "home" */
@@ -23,16 +23,16 @@ const ProjectList = loadable(() =>
 const routes = [
 	{
 		path: '/',
-		component: Home,
+		element: <Home />,
 		exact: true,
 	},
 	{
 		path: '/projects',
-		component: ProjectList,
+		element: <ProjectList />,
 	},
 	{
 		path: '/projects/:project_id',
-		component: Project,
+		element: <Project />,
 	},
 ]
 
