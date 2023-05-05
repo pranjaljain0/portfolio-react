@@ -33,7 +33,7 @@
 html,
 body,
 #app,
-#app>div {
+#app > div {
 	height: 100%;
 	overflow-x: hidden;
 }
