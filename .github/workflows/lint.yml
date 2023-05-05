@@ -15,13 +15,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+
       - name: NPM set legacy-peer-deps to true
-        run: "npm config set legacy-peer-deps true"
+        run: 'npm config set legacy-peer-deps true'
+
       - name: Insatll Prettier
-        run: "npm install prettier"
+        run: 'npm install prettier'
 
       - name: Insatll ESLint
-        run: "npm i eslint"
+        run: 'npm i eslint'
 
       - name: Run linters
-        run: "npx prettier --check ."
+        run: 'npx prettier --check .'
