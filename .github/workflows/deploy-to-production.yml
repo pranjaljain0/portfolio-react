@@ -23,7 +23,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 18
+          node-version: 18.11.0
 
   # Starts a Zeit deployment, using the production configuration file of the default institution
   # The default institution is the one defined in the `now.json` file (which is a symlink to the actual file)
