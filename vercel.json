@@ -1,6 +1,11 @@
 {
+	"version": 2,
+	"public": false,
 	"redirects": [
-		{"source": "/redCheck", "destination": "https://github.com/pranjaljain0"}
+		{
+			"source": "/redCheck",
+			"destination": "https://github.com/pranjaljain0"
+		}
 	],
 	"github": {
 		"enabled": false
