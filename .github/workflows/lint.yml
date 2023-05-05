@@ -9,18 +9,18 @@ jobs:
 
     steps:
       - name: Check out Git repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: 18.11.0
+          node-version: 18
 
       - name: Insatll Prettier
-        run: 'npm install prettier'
+        run: "npm install prettier"
 
       - name: Insatll ESLint
-        run: 'npm i eslint@6.8.0'
+        run: "npm i eslint@6.8.0"
 
       - name: Run linters
-        run: 'npx prettier --check .'
+        run: "npx prettier --check ."
