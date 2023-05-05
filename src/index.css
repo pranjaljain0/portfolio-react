@@ -33,7 +33,7 @@
 html,
 body,
 #app,
-#app > div {
+#app>div {
 	height: 100%;
 	overflow-x: hidden;
 }
@@ -295,6 +295,11 @@ a.projectLink {
 .RightUpperSecContent {
 	margin: auto;
 	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	height: 100%;
 }
 
 .RightUpperSecContent h2 {
