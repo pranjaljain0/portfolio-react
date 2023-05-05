@@ -20,7 +20,7 @@ jobs:
         run: "npm install prettier"
 
       - name: Insatll ESLint
-        run: "npm i eslint@6.8.0"
+        run: "npm i eslint"
 
       - name: Run linters
         run: "npx prettier --check ."
