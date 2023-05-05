@@ -15,7 +15,7 @@ jobs:
   # Ex: Necessary to run `yarn deploy`
   setup-environment:
     name: Setup deployment environment (Ubuntu 18.04 - Node 12.x)
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v2
@@ -30,7 +30,7 @@ jobs:
   # N.B: It's Zeit that will perform the actual deployment
   start-production-deployment:
     name: Starts Vercel deployment (Production) (Ubuntu 18.04)
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     needs: setup-environment
     steps:
       - uses: actions/checkout@v2
@@ -44,7 +44,7 @@ jobs:
           # Run Lighthouse reports in parallel of E2E tests
   run-lighthouse-tests:
     name: Run LightHouse checks (Ubuntu 18.04)
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     needs: start-production-deployment
     env:
       ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
