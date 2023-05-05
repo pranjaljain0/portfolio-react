@@ -15,7 +15,8 @@ function ProjectList({ProjectListVal}) {
 						<a
 							href={Obj.projectRoute}
 							key={`project-list-item-${index}`}
-							className='project_list_item_link'>
+							className='project_list_item_link'
+						>
 							<div
 								style={{
 									background:
@@ -25,7 +26,8 @@ function ProjectList({ProjectListVal}) {
 										Obj.finalColor +
 										`)`,
 								}}
-								className='project_list_item'>
+								className='project_list_item'
+							>
 								<h3>
 									{Obj.title}
 									{Obj.githubUrl && (

@@ -7,7 +7,8 @@ function ResumeModal({showResumeModal, closeModal}) {
 			size='lg'
 			show={showResumeModal}
 			onHide={closeModal}
-			aria-labelledby='example-modal-sizes-title-lg'>
+			aria-labelledby='example-modal-sizes-title-lg'
+		>
 			<Modal.Header closeButton>
 				<Modal.Title id='example-modal-sizes-title-lg'>Resume</Modal.Title>
 			</Modal.Header>
@@ -17,7 +18,8 @@ function ResumeModal({showResumeModal, closeModal}) {
 					src='https://pranjaljain0.github.io/pranjaljain0/Pranjal_Jain_CV.pdf#toolbar=0'
 					width='100%'
 					height='700px'
-					frameBorder='0'></iframe>
+					frameBorder='0'
+				></iframe>
 			</Modal.Body>
 		</Modal>
 	)

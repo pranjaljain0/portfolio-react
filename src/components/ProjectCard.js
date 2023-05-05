@@ -15,7 +15,8 @@ function ProjectCard({projectObj}) {
 								projectObj.finalColor +
 								`)`,
 						}}
-						className='innerColImg'>
+						className='innerColImg'
+					>
 						<p className='projectTitle'>{projectObj.title}</p>
 					</div>
 				</a>

@@ -18,7 +18,8 @@ function LeftText() {
 						]}
 						typeSpeed={40}
 						backSpeed={50}
-						loop></Typed>
+						loop
+					></Typed>
 				</p>
 			</div>
 		</div>

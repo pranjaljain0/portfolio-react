@@ -20,7 +20,8 @@ function Accordian({title, data}) {
 				<span
 					role='button'
 					className='dropdown-icon'
-					onClick={() => setShowAccordian(!showAccordian)}>
+					onClick={() => setShowAccordian(!showAccordian)}
+				>
 					{!showAccordian ? <BsChevronDown /> : <BsChevronUp />}
 				</span>
 			</div>

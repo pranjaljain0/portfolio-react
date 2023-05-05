@@ -29,7 +29,8 @@ function HomeModal({lgShow, setLgShow, HomeCards}) {
 			size='lg'
 			show={lgShow}
 			onHide={() => setLgShow(false)}
-			aria-labelledby='example-modal-sizes-title-lg'>
+			aria-labelledby='example-modal-sizes-title-lg'
+		>
 			<Modal.Header closeButton>
 				<Modal.Title id='example-modal-sizes-title-lg'>
 					{HomeCards.title}

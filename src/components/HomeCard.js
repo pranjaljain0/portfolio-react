@@ -38,7 +38,8 @@ function HomeCard({HomeCards}) {
 									HomeCards.finalColor +
 									`)`,
 							}}
-							className='innerColImg'>
+							className='innerColImg'
+						>
 							<p className='projectTitle'>{HomeCards.title}</p>
 							<div className='iconHolder'>
 								{seticon(HomeCards.icon, '50px')}

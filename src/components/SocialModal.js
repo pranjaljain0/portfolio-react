@@ -72,7 +72,8 @@ function SocialModal() {
 						<AiOutlineLinkedin size={35} />
 						<CustomLink
 							href='https://www.linkedin.com/in/pranjaljain0/'
-							target='_blank'>
+							target='_blank'
+						>
 							@pranjaljain0
 						</CustomLink>
 					</Icon>
