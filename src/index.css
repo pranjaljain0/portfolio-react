@@ -1,14 +1,16 @@
 @font-face {
 	font-family: Avenir;
 	font-display: swap;
-	unicode-range: U+000-5FF; /* Download only latin glyphs */
+	unicode-range: U+000-5FF;
+	/* Download only latin glyphs */
 	src: url(./assets/fonts/Avenir.otf);
 }
 
 @font-face {
 	font-family: AvenirBold;
 	font-display: swap;
-	unicode-range: U+000-5FF; /* Download only latin glyphs */
+	unicode-range: U+000-5FF;
+	/* Download only latin glyphs */
 	src: url(./assets/fonts/AvenirBold.otf);
 }
 
@@ -16,8 +18,10 @@
 	font-family: GoogleSans;
 	font-display: swap;
 	font-style: normal;
-	unicode-range: U+000-5FF; /* Download only latin glyphs */
-	src: url('./assets/fonts/Google sans/GoogleSans.woff2') format('woff2'); /* Super Modern Browsers */
+	unicode-range: U+000-5FF;
+	/* Download only latin glyphs */
+	src: url('./assets/fonts/Google sans/GoogleSans.woff2') format('woff2');
+	/* Super Modern Browsers */
 }
 
 * {
@@ -29,7 +33,7 @@
 html,
 body,
 #app,
-#app > div {
+#app>div {
 	height: 100%;
 	overflow-x: hidden;
 }
@@ -62,6 +66,7 @@ body,
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-left: 20px;
 }
 
 .navbar_logo_container span {
@@ -71,6 +76,10 @@ body,
 }
 
 .navbar_logo_container:hover {
+	text-decoration: none;
+}
+
+a.navbar_logo_container {
 	text-decoration: none;
 }
 
@@ -96,9 +105,11 @@ body,
 	0% {
 		background-position: 0% 50%;
 	}
+
 	50% {
 		background-position: 100% 50%;
 	}
+
 	100% {
 		background-position: 0% 50%;
 	}
@@ -108,9 +119,11 @@ body,
 	0% {
 		background-position: 0% 50%;
 	}
+
 	50% {
 		background-position: 100% 50%;
 	}
+
 	100% {
 		background-position: 0% 50%;
 	}
@@ -120,9 +133,11 @@ body,
 	0% {
 		background-position: 0% 50%;
 	}
+
 	50% {
 		background-position: 100% 50%;
 	}
+
 	100% {
 		background-position: 0% 50%;
 	}
