@@ -3,8 +3,8 @@ name: Deploy to Vercel (production)
 on:
   push:
     branches:
-      - "master"
-      - "lighthouse-integration"
+      - 'master'
+      - 'lighthouse-integration'
 
 jobs:
   setup-environment:
@@ -29,7 +29,7 @@ jobs:
       - uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.ZEIT_TOKEN }}
-          vercel-args: "--prod"
+          vercel-args: '--prod'
           vercel-org-id: ${{ secrets.ORG_ID}}
           vercel-project-id: ${{ secrets.PROJECT_ID}}
 
