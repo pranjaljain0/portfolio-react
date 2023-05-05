@@ -19,18 +19,12 @@ jobs:
         with:
           node-version: 18
 
-      - name: NPM set legacy-peer-deps to true
-        run: "npm config set legacy-peer-deps true"
-
   start-production-deployment:
     name: Starts Vercel deployment (Production) (Ubuntu)
     runs-on: ubuntu-latest
     needs: setup-environment
     steps:
       - uses: actions/checkout@v3
-
-      - name: NPM set legacy-peer-deps to true
-        run: "npm config set legacy-peer-deps true"
 
       - uses: amondnet/vercel-action@v20
         with:
