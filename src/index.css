@@ -40,6 +40,9 @@ body,
 
 .nvabar-custon {
 	background: linear-gradient(120deg, #00e4d0, #5983e8);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .mainRow {
@@ -63,9 +66,10 @@ body,
 }
 
 .navbar_logo_container {
+	flex: 1;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	margin-left: 20px;
 }
 
@@ -81,6 +85,12 @@ body,
 
 a.navbar_logo_container {
 	text-decoration: none;
+}
+
+.navbar-collapse {
+	flex: 1 !important;
+	align-items: center;
+	justify-content: flex-end;
 }
 
 .moving-gradient {
