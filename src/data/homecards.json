@@ -7,7 +7,7 @@
 					"id": 1,
 					"title": "Chatbox",
 					"description": "This is an application developed for an in-depth understanding of WebSockets. For the front end, I have used React JS and sockets IO & For the backend, implemented sockets using Express JS.",
-					"projectRoute": "https://chatbox.pranjalis.me",
+					"projectRoute": "https://chatbox-frontend.vercel.app/",
 					"githubUrl": "https://github.com/pranjaljain0/chatbox-frontend",
 					"badgeTitle": [
 						"Socket",
@@ -24,7 +24,7 @@
 					"id": 2,
 					"title": "The Yellow Mushroom",
 					"description": "Created a website home page for a start-up company that is in the field of Design and Development. Created the frontend using React JS using multiple custom-made reusable components.",
-					"projectRoute": "https://theyellowmushrooms.com",
+					"projectRoute": "https://yellowmushrooms.netlify.app/",
 					"badgeTitle": [
 						"ReactJS",
 						"ExpressJS",
@@ -39,7 +39,7 @@
 					"id": 3,
 					"title": "Refactored Waffles",
 					"description": "This is a web application made as a submission for the MongoDB Atlas Hackathon 2021, This project is an E-commerce store purely made using tools provided by MondoDB",
-					"projectRoute": "https://refactoredwaffles.pranjalis.me/",
+					"projectRoute": "https://refactored-waffle-lake.vercel.app/",
 					"githubUrl": "https://github.com/pranjaljain0/refactored-waffle",
 					"badgeTitle": [
 						"NextJS",
@@ -70,7 +70,7 @@
 				{
 					"id": 5,
 					"title": "Cards",
-					"projectRoute": "https://cards.pranjalis.me",
+					"projectRoute": "https://credit-card-landing-page-ui.vercel.app/",
 					"description": "Its a project where I was exploring integration of 3D objects which are exported from blender to the web applications which can in turn make the web a more enhanced experience for users.",
 					"badgeTitle": [
 						"ReactJS",
