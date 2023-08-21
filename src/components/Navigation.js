@@ -1,6 +1,6 @@
-import {Button, Nav, Navbar} from 'react-bootstrap'
-import {FaDownload, FaGithub, FaLinkedin} from 'react-icons/fa'
-import React, {useState} from 'react'
+import { Button, Nav, Navbar } from 'react-bootstrap'
+import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa'
+import React, { useState } from 'react'
 
 import PortfolioLogo from '../assets/Image/logo.svg'
 import loadable from '@loadable/component'
@@ -25,7 +25,7 @@ function Navigation() {
 						<Nav.Link href='http://blog.pranjaljain.me'>
 							<Button className='moving-gradient'>Blogs</Button>
 						</Nav.Link>
-						<Nav.Link>
+						{/* <Nav.Link>
 							<Button
 								variant='light'
 								style={{
@@ -55,7 +55,7 @@ function Navigation() {
 									}
 								/>
 							</Button>
-						</Nav.Link>
+						</Nav.Link> */}
 						<Nav.Link
 							aria-label='Github'
 							href='https://github.com/pranjaljain0'
