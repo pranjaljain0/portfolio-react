@@ -7,9 +7,15 @@
 					"id": 1,
 					"title": "Chatbox",
 					"description": "This is an application developed for an in-depth understanding of WebSockets. For the front end, I have used React JS and sockets IO & For the backend, implemented sockets using Express JS.",
-					"projectRoute": "https://chatbox.pranjaljain.me",
+					"projectRoute": "https://chatbox.pranjalis.me",
 					"githubUrl": "https://github.com/pranjaljain0/chatbox-frontend",
-					"badgeTitle": ["Socket", "ReactJS", "ExpressJS", "HTML", "CSS"],
+					"badgeTitle": [
+						"Socket",
+						"ReactJS",
+						"ExpressJS",
+						"HTML",
+						"CSS"
+					],
 					"initialColor": "#56CCF2",
 					"finalColor": "#2F80ED",
 					"language": "C++"
@@ -19,7 +25,12 @@
 					"title": "The Yellow Mushroom",
 					"description": "Created a website home page for a start-up company that is in the field of Design and Development. Created the frontend using React JS using multiple custom-made reusable components.",
 					"projectRoute": "https://theyellowmushrooms.com",
-					"badgeTitle": ["ReactJS", "ExpressJS", "HTML", "CSS"],
+					"badgeTitle": [
+						"ReactJS",
+						"ExpressJS",
+						"HTML",
+						"CSS"
+					],
 					"initialColor": "#373B44",
 					"finalColor": "#4286f4",
 					"language": "Java"
@@ -28,9 +39,14 @@
 					"id": 3,
 					"title": "Refactored Waffles",
 					"description": "This is a web application made as a submission for the MongoDB Atlas Hackathon 2021, This project is an E-commerce store purely made using tools provided by MondoDB",
-					"projectRoute": "https://refactoredwaffles.pranjaljain.me/",
+					"projectRoute": "https://refactoredwaffles.pranjalis.me/",
 					"githubUrl": "https://github.com/pranjaljain0/refactored-waffle",
-					"badgeTitle": ["NextJS", "MongoDB", "HTML", "CSS"],
+					"badgeTitle": [
+						"NextJS",
+						"MongoDB",
+						"HTML",
+						"CSS"
+					],
 					"initialColor": "#f12711",
 					"finalColor": "#f5af19",
 					"language": "JavaScript"
@@ -40,7 +56,13 @@
 					"title": "ZenHotline",
 					"projectRoute": "https://dev.zenhotline.com/",
 					"description": "Initiated a medical teleconsultation platform using reactJS as a front-end framework created almost 40+ reusable components Executed a middleware with ExpressJS that consisted of 60+ endpoints to perform backend operations Integrated nearly 10 accessories tools to schedule, maintain and organize meetings/video calls between clients and professionals",
-					"badgeTitle": ["ReactJS", "ExpressJS", "HTML", "CSS", "Firebase"],
+					"badgeTitle": [
+						"ReactJS",
+						"ExpressJS",
+						"HTML",
+						"CSS",
+						"Firebase"
+					],
 					"initialColor": "#11998e",
 					"finalColor": "#38ef7d",
 					"language": "Haskell"
@@ -48,7 +70,7 @@
 				{
 					"id": 5,
 					"title": "Cards",
-					"projectRoute": "https://cards.pranjaljain.me",
+					"projectRoute": "https://cards.pranjalis.me",
 					"description": "Its a project where I was exploring integration of 3D objects which are exported from blender to the web applications which can in turn make the web a more enhanced experience for users.",
 					"badgeTitle": [
 						"ReactJS",
